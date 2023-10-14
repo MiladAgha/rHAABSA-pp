@@ -1,8 +1,6 @@
 __pycache__
 .vscode
 
-data/ARTSData/*
-!data/ARTSData/placeholder.txt
 data/programGeneratedData/*
 !data/programGeneratedData/placeholder.txt
 data/temporaryData/temp_BERT_Large/*
