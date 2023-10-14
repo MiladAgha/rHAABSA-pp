@@ -1,64 +1,39 @@
-# HAABSA
-Code for A Hybrid Approach for Aspect-Based Sentiment Analysis Using a Lexicalized Domain Ontology and Attentional Neural Models
+# HAABSA++
+The code for A Hybrid Approach for Aspect-Based Sentiment Analysis Using Contextual Word Emmbeddings and Hierarchical Attention
 
-All software is written in PYTHON3 (https://www.python.org/) and makes use of the TensorFlow framework (https://www.tensorflow.org/).
+The hybrid approach for aspect-based sentiment analysis (HAABSA) is a two-step method that classifies target sentiments using a domain sentiment ontology and a Multi-Hop LCR-Rot model as backup.
+ - HAABSA paper: https://personal.eur.nl/frasincar/papers/ESWC2019/eswc2019.pdf
+ 
+ Keeping the ontology, we optimise the embedding layer of the backup neural network with context-dependent word embeddings and integrate hierarchical attention in the model's architecture (HAABSA++).
+ 
+ ## Software
+The HAABSA source code: https://github.com/ofwallaart/HAABSA needs to be installed. Then the following changes need to be done:
+- Update files: config.py, att_layer.py, main.py, main_cross.py and main_hyper.py.
+- Add files: 
+  - Context-dependent word embeddings: 
+    - getBERTusingColab.py (extract the BERT word embeddings);
+    - prepareBERT.py (prepare the final BERT emebdding matrix, training and tesing datasets);
+    - prepareELMo.py (extract the ELMo word emebddings and prepare the final ELMo embedding matrix, training and testing datasets);
+    - raw_data2015.txt, raw_data2016.txt (Data folder).
+  - Hierarchical Attention: 
+    - lcrModelAlt_hierarchical_v1 (first method);
+    - lcrModelAlt_hierarchical_v2 (second method);
+    - lcrModelAlt_hierarchical_v3 (third method);
+    - lcrModelAlt_hierarchical_v4 (fourth method).
 
-## Installation Instructions (Windows):
-### Dowload required files and add them to data/externalData folder:
-1. Download ontology: https://github.com/KSchouten/Heracles/tree/master/src/main/resources/externalData
-2. Download SemEval2015 Datasets: http://alt.qcri.org/semeval2015/task12/index.php?id=data-and-tools
-3. Download SemEval2016 Dataset: http://alt.qcri.org/semeval2016/task5/index.php?id=data-and-tools
-4. Download Glove Embeddings: http://nlp.stanford.edu/data/glove.42B.300d.zip
-5. Download Stanford CoreNLP parser: https://nlp.stanford.edu/software/stanford-parser-full-2018-02-27.zip
-6. Download Stanford CoreNLP Language models: https://nlp.stanford.edu/software/stanford-english-corenlp-2018-02-27-models.jar
+The training and testing datasets are in the Data folder for SemEval 2015 and SemEval 2016. The files are available for Glove, ELMo and BERT word emebddings. 
 
-### Setup Environment
-1. Install chocolatey (a package manager for Windows): https://chocolatey.org/install
-2. Open a command prompt.
-3. Install python3 by running the following command: `code(choco install python)` (http://docs.python-guide.org/en/latest/starting/install3/win/).
-4. Make sure that pip is installed and use pip to install the following packages: setuptools and virtualenv (http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenvironments-ref).
-5. Create a virtual environemnt in a desired location by running the following command: `code(virtualenv ENV_NAME)`
-6. Direct to the virtual environment source directory. 
-7. Unzip the HAABSA_software.zip file in the virtual environment directrory. 
-8. Activate the virtual environment by the following command: 'code(Scripts\activate.bat)`.
-9. Install the required packages from the requirements.txt file by running the following command: `code(pip install -r requirements.txt)`.
-10. Install the required space language pack by running the following command: `code(python -m spacy download en)`
-
-### Run Software
-1. Configure one of the three main files to the required configuration (main.py, main_cross.py, main_hyper.py)
-2. Run the program from the command line by the following command: `code(python PROGRAM_TO_RUN.py)` (where PROGRAM_TO_RUN is main/main_cross/main_hyper)
-
-## Software explanation:
-The environment contains the following main files that can be run: main.py, main_cross.py, main_hyper.py
-- main.py: program to run single in-sample and out-of-sample valdition runs. Each method can be activated by setting its corresponding boolean to True e.g. to run the CABASC method set runCABASC = True.
-- main_cross.py: similar to main.py but runs a 10-fold cross validation procedure for each method.
-- main_hyper.py: program that is able to do hyperparameter optimzation for a given space of hyperparamters for each method. To change a method change the objective and space parameters in the run_a_trial() function.
-
-- config.py: contains parameter configurations that can be changed such as: dataset_year, batch_size, iterations.
-
-- dataReader2016.py, loadData.py: files used to read in the raw data and transform them to the required formats to be used by one of the algorithms
-
-- lcrModel.py: Tensorflow implementation for the LCR-Rot algorithm
-- lcrModelAlt.py: Tensorflow implementation for the LCR-Rot-hop algorithm
-- lcrModelInverse.py: Tensorflow implementation for the LCR-Rot-inv algorithm
-- cabascModel.py: Tensorflow implementation for the CABASC algorithm
-- OntologyReasoner.py: PYTHON implementation for the ontology reasoner
-- svmModel.py: PYTHON implementation for a BoW model using a SVM.
-
-- att_layer.py, nn_layer.py, utils.py: programs that declare additional functions used by the machine learning algorithms.
-
-## Directory explanation:
-The following directories are necessary for the virtual environment setup: \__pycache, \Include, \Lib, \Scripts, \tcl, \venv
-- cross_results_2015: Results for a k-fold cross validation process for the SemEval-2015 dataset
-- cross_results_2016: Results for a k-fold cross validation process for the SemEval-2015 dataset
-- data:
-	- externalData: Location for the external data required by the methods
-	- programGeneratedData: Location for preprocessed data that is generated by the programs
-- hyper_results: Contains the stored results for hyperparameter optimzation for each method
-- results: temporary store location for the hyperopt package
-
-## Related Work: ##
-This code uses ideas and code of the following related papers:
-- Zheng, S. and Xia, R. (2018). Left-center-right separated neural network for aspect-based sentiment analysis with rotatory attention. arXiv preprint arXiv:1802.00892.
-- Schouten, K. and Frasincar, F. (2018). Ontology-driven sentiment analysis of product and service aspects. In Proceedings of the 15th Extended Semantic Web Conference (ESWC 2018). Springer. To appear
-- Liu, Q., Zhang, H., Zeng, Y., Huang, Z., and Wu, Z. (2018). Content attention model for aspect based sentiment analysis. In Proceedings of the 27th International World Wide Web Conference (WWW 2018). ACM Press.
+*Even if the model is trained with contextul word emebddings, the ontology has to run on a dataset special designed for the non-contextual case.
+  
+ ## Word embeddings
+ - GloVe word embeddings (SemEval 2015): https://drive.google.com/file/d/14Gn-gkZDuTVSOFRPNqJeQABQxu-bZ5Tu/view?usp=sharing
+ - GloVe word embeddings (SemEval 2016): https://drive.google.com/file/d/1UUUrlF_RuzQYIw_Jk_T40IyIs-fy7W92/view?usp=sharing
+ - ELMo word embeddings (SemEval 2015): https://drive.google.com/file/d/1GfHKLmbiBEkATkeNmJq7CyXGo61aoY2l/view?usp=sharing
+ - ELMo word embeddings (SemEval 2016): https://drive.google.com/file/d/1OT_1p55LNc4vxc0IZksSj2PmFraUIlRD/view?usp=sharing
+ - BERT word embeddings (SemEval 2015): https://drive.google.com/file/d/1-P1LjDfwPhlt3UZhFIcdLQyEHFuorokx/view?usp=sharing
+ - BERT word embeddings (SemEval 2016): https://drive.google.com/file/d/1eOc0pgbjGA-JVIx4jdA3m1xeYaf0xsx2/view?usp=sharing
+ 
+Download pre-trained word emebddings: 
+- GloVe: https://nlp.stanford.edu/projects/glove/
+- Word2vec: https://code.google.com/archive/p/word2vec/
+- FastText: https://fasttext.cc/docs/en/english-vectors.html

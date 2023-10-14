@@ -4,7 +4,8 @@ import xml.etree.ElementTree as ET
 from collections import Counter
 import string
 import en_core_web_sm
-en_nlp = en_core_web_sm.load()
+n_nlp = en_core_web_sm.load()
+#import spacy
 import nltk
 import re
 import numpy as np

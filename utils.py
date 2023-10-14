@@ -3,7 +3,6 @@
 
 import numpy as np
 
-
 def batch_index(length, batch_size, n_iter=100, is_shuffle=True):
     index = list(range(length))
     for j in range(n_iter):
@@ -11,7 +10,6 @@ def batch_index(length, batch_size, n_iter=100, is_shuffle=True):
             np.random.shuffle(index)
         for i in range(int(length / batch_size) + (1 if length % batch_size else 0)):
             yield index[i * batch_size:(i + 1) * batch_size]
-
 
 def load_word_id_mapping(word_id_file, encoding='utf8'):
     """
@@ -258,7 +256,7 @@ def extract_aspect_to_id(input_file, aspect2id_file):
     dest_fp = open(aspect2id_file, 'w')
     lines = open(input_file).readlines()
     targets = set()
-    for i in xrange(0, len(lines), 3):
+    for i in range(0, len(lines), 3):
         target = lines[i + 1].lower().split()
         targets.add(' '.join(target))
     aspect2id = list(zip(targets, range(1, len(lines) + 1)))
@@ -281,7 +279,7 @@ def load_inputs_twitter_at(input_file, word_id_file, aspect_id_file, sentence_le
     x, y, sen_len = [], [], []
     aspect_words = []
     lines = open(input_file).readlines()
-    for i in xrange(0, len(lines), 3):
+    for i in range(0, len(lines), 3):
         aspect_word = ' '.join(lines[i + 1].lower().split())
         aspect_words.append(aspect_to_id.get(aspect_word, 0))
 

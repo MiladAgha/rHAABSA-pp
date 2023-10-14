@@ -38,7 +38,7 @@ def loadDataAndEmbeddings(config,loadData):
         outF.close()
         print((len(source_word2idx)-count)/len(source_word2idx)*100)
         
-        return train_data[0], test_data[0], train_data[4], test_data[4]
+        return train_data[0], test_data[0], train_data[4], test_data[4] #train_size, test_size, train_polarity_vector, test_polarity_vector
 
     else:
         #get statistic properties from txt file

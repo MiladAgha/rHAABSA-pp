@@ -1,0 +1,13 @@
+__pycache__
+.vscode
+
+data/ARTSData/*
+!data/ARTSData/placeholder.txt
+data/programGeneratedData/*
+!data/programGeneratedData/placeholder.txt
+data/temporaryData/temp_BERT_Large/*
+!data/temporaryData/temp_BERT_Large/placeholder.txt
+data/temporaryData/temp_BERT_Tiny/*
+!data/temporaryData/temp_BERT_Tiny/placeholder.txt
+external/*
+!external/placeholder.txt

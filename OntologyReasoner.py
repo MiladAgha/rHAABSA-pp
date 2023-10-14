@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
+
 from owlready2 import *
 import numpy as np
 import nltk
@@ -14,7 +15,7 @@ from config import *
 nltk.internals.config_java('C:/Program Files/Java/jre1.8.0_171/bin/java.exe')
 java_path = 'C:/Program Files/Java/jre1.8.0_171/bin/java.exe'
 os.environ['JAVAHOME'] = java_path
-
+owlready2.JAVA_EXE = 'C:/Program Files/Java/jre1.8.0_171/bin/java.exe'
 
 class OntReasoner():
     def __init__(self):
@@ -384,6 +385,4 @@ class OntReasoner():
                         if i in self.remaining_pos_vector:
                             outF.write(line)
 
-
         return accuracy, len(self.remaining_pos_vector)/3
-
