@@ -27,7 +27,7 @@ import lcrModelAlt_hierarchical_v4
 # main function
 def main(_):
     loadData         = False        # only for non-contextualised word embeddings.
-                                    #   Use prepareBERT for BERT (and BERT_Large) and prepareELMo for ELMo
+                                    # Use prepareBERT for BERT (and BERT_Large) and prepareELMo for ELMo
     useOntology      = True         # When run together with runLCRROTALT, the two-step method is used
     runLCRROTALT     = False
 
@@ -40,7 +40,7 @@ def main(_):
     runLCRROTALT_v1     = False
     runLCRROTALT_v2     = False
     runLCRROTALT_v3     = False
-    runLCRROTALT_v4     = True
+    runLCRROTALT_v4     = False
 
     #determine if backupmethod is used
     if runCABASC or runLCRROT or runLCRROTALT or runLCRROTINVERSE or runSVM or runLCRROTALT_v1 or runLCRROTALT_v2 or runLCRROTALT_v3 or runLCRROTALT_v4:
@@ -58,7 +58,7 @@ def main(_):
         print('Starting Ontology Reasoner')
         #in sample accuracy
         Ontology = OntReasoner()
-        accuracyOnt, remaining_size = Ontology.run(backup,FLAGS.test_path_ont, runSVM)
+        accuracyOnt, remaining_size = Ontology.run(True, FLAGS.test_path_ont, runSVM)
         #out of sample accuracy
         #Ontology = OntReasoner()      
         #accuracyInSampleOnt, remainingInSample_size = Ontology.run(backup,FLAGS.train_path_ont, runSVM)        
@@ -66,8 +66,7 @@ def main(_):
             test = FLAGS.remaining_svm_test_path
         else:
             test = FLAGS.remaining_test_path
-            print(test[0])
-        print('train acc = {:.4f}, test acc={:.4f}, remaining size={}'.format(accuracyOnt, accuracyOnt, remaining_size))
+        print('train acc = {:.4f}, test acc={:.4f}, remaining size={}'.format(0.0, accuracyOnt, remaining_size))
     else:
         if runSVM == True:
             test = FLAGS.test_svm_path
@@ -76,28 +75,23 @@ def main(_):
 
     # LCR-Rot-hop model
     if runLCRROTALT == True:
-       _, pred2, fw2, bw2, tl2, tr2 = lcrModelAlt.main(FLAGS.train_path, test, accuracyOnt, test_size,
-                                                        remaining_size)
+       _, pred2, fw2, bw2, tl2, tr2 = lcrModelAlt.main(FLAGS.train_path, test, accuracyOnt, test_size, remaining_size)
        tf.reset_default_graph()
 
     if runLCRROTALT_v1 == True:
-       _, pred2, fw2, bw2, tl2, tr2 = lcrModelAlt_hierarchical_v1.main(FLAGS.train_path, test, accuracyOnt, test_size,
-                                                        remaining_size)
+       _, pred2, fw2, bw2, tl2, tr2 = lcrModelAlt_hierarchical_v1.main(FLAGS.train_path, test, accuracyOnt, test_size, remaining_size)
        tf.reset_default_graph()
 
     if runLCRROTALT_v2 == True:
-       _, pred2, fw2, bw2, tl2, tr2 = lcrModelAlt_hierarchical_v2.main(FLAGS.train_path, test, accuracyOnt, test_size,
-                                                        remaining_size)
+       _, pred2, fw2, bw2, tl2, tr2 = lcrModelAlt_hierarchical_v2.main(FLAGS.train_path, test, accuracyOnt, test_size, remaining_size)
        tf.reset_default_graph()
 
     if runLCRROTALT_v3 == True:
-       _, pred2, fw2, bw2, tl2, tr2 = lcrModelAlt_hierarchical_v3.main(FLAGS.train_path, test, accuracyOnt, test_size,
-                                                        remaining_size)
+       _, pred2, fw2, bw2, tl2, tr2 = lcrModelAlt_hierarchical_v3.main(FLAGS.train_path, test, accuracyOnt, test_size, remaining_size)
        tf.reset_default_graph()
 
     if runLCRROTALT_v4 == True:
-       _, pred2, fw2, bw2, tl2, tr2 = lcrModelAlt_hierarchical_v4.main(FLAGS.train_path, test, accuracyOnt, test_size,
-                                                        remaining_size)
+       _, pred2, fw2, bw2, tl2, tr2 = lcrModelAlt_hierarchical_v4.main(FLAGS.train_path, test, accuracyOnt, test_size, remaining_size)
        tf.reset_default_graph()
 
 '''

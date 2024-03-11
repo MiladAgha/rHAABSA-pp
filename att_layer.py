@@ -13,7 +13,7 @@ def softmax_with_len(inputs, length, max_len):
         length = tf.reshape(length, [-1])
         mask = tf.reshape(tf.cast(tf.sequence_mask(length, max_len), tf.float32), tf.shape(inputs))
         inputs *= mask
-    _sum = tf.reduce_sum(inputs, reduction_indices=-1, keep_dims=True) + 1e-9
+    _sum = tf.reduce_sum(inputs, reduction_indices=-1, keepdims=True) + 1e-9
     return inputs / _sum
 
 

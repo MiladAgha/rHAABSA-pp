@@ -124,7 +124,7 @@ def reduce_mean_with_len(inputs, length):
     :return: 2-D tensor
     """
     length = tf.cast(tf.reshape(length, [-1, 1]), tf.float32) + 1e-9
-    inputs = tf.reduce_sum(inputs, 1, keep_dims=False) / length
+    inputs = tf.reduce_sum(inputs, 1, keepdims=False) / length
     return inputs
 
 

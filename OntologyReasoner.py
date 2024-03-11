@@ -12,14 +12,14 @@ from nltk import *
 from config import *
 
 #path to the java runtime environment
-nltk.internals.config_java('C:/Program Files/Java/jre1.8.0_171/bin/java.exe')
-java_path = 'C:/Program Files/Java/jre1.8.0_171/bin/java.exe'
+nltk.internals.config_java('/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java')
+java_path = '/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java'
 os.environ['JAVAHOME'] = java_path
-owlready2.JAVA_EXE = 'C:/Program Files/Java/jre1.8.0_171/bin/java.exe'
+# owlready2.JAVA_EXE = '/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java'
 
 class OntReasoner():
     def __init__(self):
-        onto_path.append("data/externalData")  # Path to ontology
+        onto_path.append("external")  # Path to ontology
         self.onto = get_ontology("ontology.owl")  # Name of ontology
         self.onto = self.onto.load()
         self.timeStart = time.time()
@@ -147,8 +147,8 @@ class OntReasoner():
 
     def is_negated(self, word, words_in_sentence):
         #negation check with window and dependency graph
-        path_to_jar = 'data/externalData/stanford-parser-full-2018-02-27/stanford-parser.jar'
-        path_to_models_jar = 'data/externalData/stanford-parser-full-2018-02-27/stanford-parser-3.9.1-models.jar'
+        path_to_jar = 'external/stanford-parser-full-2018-02-27/stanford-parser.jar'
+        path_to_models_jar = 'external/stanford-parser-full-2018-02-27/stanford-parser-3.9.1-models.jar'
 
         dependency_parser = StanfordDependencyParser(path_to_jar=path_to_jar, path_to_models_jar=path_to_models_jar)
 

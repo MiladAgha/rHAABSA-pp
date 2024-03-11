@@ -62,7 +62,7 @@ def main(_):
             accuracyOnt, remaining_size = Ontology.run(backup,BASE_val+str(i)+'.txt', runSVM, True, i)
             acc.append(accuracyOnt)
             remaining_size_vec.append(remaining_size)
-        with open("C:/Users/Maria/Desktop/data/programGeneratedData/crossValidation"+str(FLAGS.year)+'/cross_results_"+str(FLAGS.year)+"/ONTOLOGY_"+str(FLAGS.year)+'.txt', 'w') as result:
+        with open("C:/Users/Maria/Desktop/data/programGeneratedData/crossValidation"+str(FLAGS.year)+"/cross_results_"+str(FLAGS.year)+"/ONTOLOGY_"+str(FLAGS.year)+'.txt', 'w') as result:
             print(str(split_size)+'-fold cross validation results')
             print('Accuracy: {}, St Dev:{}'.format(np.mean(np.asarray(acc)), np.std(np.asarray(acc))))
             print(acc)
@@ -113,11 +113,11 @@ def main(_):
         acc=[]
         #k-fold cross validation
         for i in range(split_size):
-            acc1, _, _, _, _, _ = lcrModelAlt_hierarchical_v3.main(BASE_train+str(i)+'.txt',test+str(i)+'.txt', accuracyOnt, test_size[i], remaining_size)
+            acc1, _, _, _, _, _ = lcrModelAlt_hierarchical_v4.main(BASE_train+str(i)+'.txt',test+str(i)+'.txt', accuracyOnt, test_size[i], remaining_size)
             acc.append(acc1)
             tf.reset_default_graph()
             print('iteration: '+ str(i))
-        with open("C:/Users/Maria/Desktop/data/programGeneratedData/crossValidation"+str(FLAGS.year)+'/cross_results_"+str(FLAGS.year)+"/LCRROT_ALT_"+str(FLAGS.year)+'.txt', 'w') as result:
+        with open("C:/Users/Maria/Desktop/data/programGeneratedData/crossValidation"+str(FLAGS.year)+"/cross_results_"+str(FLAGS.year)+"/LCRROT_ALT_"+str(FLAGS.year)+'.txt', 'w') as result:
             result.write(str(acc))
             result.write('Accuracy: {}, St Dev:{} /n'.format(np.mean(np.asarray(acc)), np.std(np.asarray(acc))))
             print(str(split_size)+'-fold cross validation results')

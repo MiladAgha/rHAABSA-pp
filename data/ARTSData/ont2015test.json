@@ -1,68 +1,4 @@
 {
-    "ADLT#10:1_0": {
-        "from": 27,
-        "id": "ADLT#10:1_0",
-        "polarity": "positive",
-        "sentence": "This is the MOST wonderful restaurant in all of New York City, not just Brooklyn...",
-        "term": "restaurant",
-        "to": 37
-    },
-    "ADLT#10:2_0": {
-        "from": 61,
-        "id": "ADLT#10:2_0",
-        "polarity": "positive",
-        "sentence": "for 7 years they have put out the most tasty, most delicious food and kept it that way...",
-        "term": "food",
-        "to": 65
-    },
-    "ADLT#10:3_0": {
-        "from": 27,
-        "id": "ADLT#10:3_0",
-        "polarity": "positive",
-        "sentence": "never swaying, never a bad meal, never bad service...",
-        "term": "meal",
-        "to": 31
-    },
-    "ADLT#10:3_1": {
-        "from": 43,
-        "id": "ADLT#10:3_1",
-        "polarity": "positive",
-        "sentence": "never swaying, never a bad meal, never bad service...",
-        "term": "service",
-        "to": 50
-    },
-    "ADLT#10:6_0": {
-        "from": 6,
-        "id": "ADLT#10:6_0",
-        "polarity": "positive",
-        "sentence": "great food, great wine list, great service in a great neighborhood...",
-        "term": "food",
-        "to": 10
-    },
-    "ADLT#10:6_1": {
-        "from": 18,
-        "id": "ADLT#10:6_1",
-        "polarity": "positive",
-        "sentence": "great food, great wine list, great service in a great neighborhood...",
-        "term": "wine list",
-        "to": 27
-    },
-    "ADLT#10:6_2": {
-        "from": 35,
-        "id": "ADLT#10:6_2",
-        "polarity": "positive",
-        "sentence": "great food, great wine list, great service in a great neighborhood...",
-        "term": "service",
-        "to": 42
-    },
-    "ADLT#10:6_3": {
-        "from": 54,
-        "id": "ADLT#10:6_3",
-        "polarity": "positive",
-        "sentence": "great food, great wine list, great service in a great neighborhood...",
-        "term": "neighborhood",
-        "to": 66
-    },
     "ADLT#11:1_0": {
         "from": 4,
         "id": "ADLT#11:1_0",
@@ -95,46 +31,6 @@
         "term": "staff",
         "to": 154
     },
-    "ADLT#2:1_0": {
-        "from": 4,
-        "id": "ADLT#2:1_0",
-        "polarity": "positive",
-        "sentence": "The pastas are incredible, the risottos (particularly the sepia) are fantastic and the braised rabbit is amazing.",
-        "term": "pastas",
-        "to": 10
-    },
-    "ADLT#2:1_1": {
-        "from": 31,
-        "id": "ADLT#2:1_1",
-        "polarity": "positive",
-        "sentence": "The pastas are incredible, the risottos (particularly the sepia) are fantastic and the braised rabbit is amazing.",
-        "term": "risottos",
-        "to": 39
-    },
-    "ADLT#2:1_2": {
-        "from": 58,
-        "id": "ADLT#2:1_2",
-        "polarity": "positive",
-        "sentence": "The pastas are incredible, the risottos (particularly the sepia) are fantastic and the braised rabbit is amazing.",
-        "term": "sepia",
-        "to": 63
-    },
-    "ADLT#2:1_3": {
-        "from": 87,
-        "id": "ADLT#2:1_3",
-        "polarity": "positive",
-        "sentence": "The pastas are incredible, the risottos (particularly the sepia) are fantastic and the braised rabbit is amazing.",
-        "term": "braised rabbit",
-        "to": 101
-    },
-    "ADLT#3:1_0": {
-        "from": 18,
-        "id": "ADLT#3:1_0",
-        "polarity": "positive",
-        "sentence": "Everything on the menu is great. ",
-        "term": "menu",
-        "to": 22
-    },
     "ADLT#3:2_0": {
         "from": 5,
         "id": "ADLT#3:2_0",
@@ -157,14 +53,6 @@
         "polarity": "negative",
         "sentence": "Maitre-D-\"Eat and get out\"",
         "term": "Maitre-D",
-        "to": 8
-    },
-    "ADLT#6:2_0": {
-        "from": 4,
-        "id": "ADLT#6:2_0",
-        "polarity": "positive",
-        "sentence": "The food and service were fine, however the maitre-D was incredibly unwelcoming and arrogant.",
-        "term": "food",
         "to": 8
     },
     "ADLT#6:2_1": {
@@ -191,14 +79,6 @@
         "term": "bottle of wine",
         "to": 66
     },
-    "ADLT#6:4_0": {
-        "from": 217,
-        "id": "ADLT#6:4_0",
-        "polarity": "negative",
-        "sentence": "This guy refused to seat her and she left, followed shortly by the four of us, but not before I told him that in my 40 years of world travel, including Paris, that I had never seen such a display of bad behavior by a frontman in a restaurant.",
-        "term": "frontman",
-        "to": 225
-    },
     "ADLT#6:6_0": {
         "from": 56,
         "id": "ADLT#6:6_0",
@@ -206,30 +86,6 @@
         "sentence": "A word to the wise: you can't dine here and disturb the maitre-D's sense of \" table turnover\", as whacked as it is, or else.",
         "term": "maitre-D",
         "to": 64
-    },
-    "ADLT#8:0_0": {
-        "from": 5,
-        "id": "ADLT#8:0_0",
-        "polarity": "positive",
-        "sentence": "Love Al Di La",
-        "term": "Al Di La",
-        "to": 13
-    },
-    "ADLT#8:1_0": {
-        "from": 17,
-        "id": "ADLT#8:1_0",
-        "polarity": "positive",
-        "sentence": "I recommend this place to everyone.",
-        "term": "place",
-        "to": 22
-    },
-    "ADLT#8:2_0": {
-        "from": 6,
-        "id": "ADLT#8:2_0",
-        "polarity": "positive",
-        "sentence": "Great food.",
-        "term": "food",
-        "to": 10
     },
     "ADLT#9:4_0": {
         "from": 17,
@@ -270,22 +126,6 @@
         "sentence": "It was totally overpriced- fish and chips was about $15.... ",
         "term": "fish and chips",
         "to": 41
-    },
-    "BFC#7:0_0": {
-        "from": 9,
-        "id": "BFC#7:0_0",
-        "polarity": "positive",
-        "sentence": "Fabulous food - if the front of house staff don't put you off \u2013 ",
-        "term": "food",
-        "to": 13
-    },
-    "BFC#7:0_1": {
-        "from": 23,
-        "id": "BFC#7:0_1",
-        "polarity": "negative",
-        "sentence": "Fabulous food - if the front of house staff don't put you off \u2013 ",
-        "term": "front of house staff",
-        "to": 43
     },
     "BFC#7:11_0": {
         "from": 64,
@@ -367,54 +207,6 @@
         "term": "\"salt encrusted shrimp\" appetizer",
         "to": 70
     },
-    "BFC#9:17_0": {
-        "from": 10,
-        "id": "BFC#9:17_0",
-        "polarity": "positive",
-        "sentence": "I had the Thai style Fried Sea Bass...which was very good. ",
-        "term": "Thai style Fried Sea Bass",
-        "to": 35
-    },
-    "BFC#9:18_0": {
-        "from": 43,
-        "id": "BFC#9:18_0",
-        "polarity": "positive",
-        "sentence": "Everyone seemed generally happy with their food, except my brother who had the grilled Mahi Mahi, seemingly drenched in Grapfruit Juice! ",
-        "term": "food",
-        "to": 47
-    },
-    "BFC#9:18_1": {
-        "from": 79,
-        "id": "BFC#9:18_1",
-        "polarity": "negative",
-        "sentence": "Everyone seemed generally happy with their food, except my brother who had the grilled Mahi Mahi, seemingly drenched in Grapfruit Juice! ",
-        "term": "grilled Mahi Mahi",
-        "to": 96
-    },
-    "BFC#9:19_0": {
-        "from": 12,
-        "id": "BFC#9:19_0",
-        "polarity": "positive",
-        "sentence": "I heard the lobster roll was excellent. ",
-        "term": "lobster roll",
-        "to": 24
-    },
-    "BFC#9:21_0": {
-        "from": 15,
-        "id": "BFC#9:21_0",
-        "polarity": "negative",
-        "sentence": "All in all the food was good - a little on the expensive side, but fresh. ",
-        "term": "food",
-        "to": 19
-    },
-    "BFC#9:21_1": {
-        "from": 15,
-        "id": "BFC#9:21_1",
-        "polarity": "positive",
-        "sentence": "All in all the food was good - a little on the expensive side, but fresh. ",
-        "term": "food",
-        "to": 19
-    },
     "BFC#9:22_0": {
         "from": 0,
         "id": "BFC#9:22_0",
@@ -478,30 +270,6 @@
         "sentence": "The lobster knuckles (special of the day) were ok, but pretty tasteless.",
         "term": "lobster knuckles",
         "to": 20
-    },
-    "BG#1:2_0": {
-        "from": 6,
-        "id": "BG#1:2_0",
-        "polarity": "positive",
-        "sentence": "Great survice",
-        "term": "survice",
-        "to": 13
-    },
-    "BG#5:0_0": {
-        "from": 6,
-        "id": "BG#5:0_0",
-        "polarity": "positive",
-        "sentence": "Great Indian food",
-        "term": "Indian food",
-        "to": 17
-    },
-    "BG#5:2_0": {
-        "from": 0,
-        "id": "BG#5:2_0",
-        "polarity": "positive",
-        "sentence": "Food was amazing - I love Indian food and eat it quite regularly, but I can say this is one of the best I've had.",
-        "term": "Food",
-        "to": 4
     },
     "BG#5:3_0": {
         "from": 13,
@@ -575,14 +343,6 @@
         "term": "Indian food",
         "to": 145
     },
-    "BG#6:0_0": {
-        "from": 5,
-        "id": "BG#6:0_0",
-        "polarity": "positive",
-        "sentence": "Best Indian Restaurant in the City",
-        "term": "Indian Restaurant",
-        "to": 22
-    },
     "BG#6:1_0": {
         "from": 0,
         "id": "BG#6:1_0",
@@ -623,22 +383,6 @@
         "term": "lunch buffet",
         "to": 16
     },
-    "BG#8:5_0": {
-        "from": 17,
-        "id": "BG#8:5_0",
-        "polarity": "positive",
-        "sentence": "We have gone for dinner only a few times but the same great quality and service is given.",
-        "term": "dinner",
-        "to": 23
-    },
-    "BG#8:5_1": {
-        "from": 72,
-        "id": "BG#8:5_1",
-        "polarity": "positive",
-        "sentence": "We have gone for dinner only a few times but the same great quality and service is given.",
-        "term": "service",
-        "to": 79
-    },
     "BG#8:6_0": {
         "from": 0,
         "id": "BG#8:6_0",
@@ -646,38 +390,6 @@
         "sentence": "Bukhara is on my top 5 Indian places in NYC",
         "term": "Bukhara",
         "to": 7
-    },
-    "BHD#1:0_0": {
-        "from": 4,
-        "id": "BHD#1:0_0",
-        "polarity": "positive",
-        "sentence": "The hot dogs are good, yes, but the reason to get over here is the fantastic pork croquette sandwich, perfect on its supermarket squishy bun.",
-        "term": "hot dogs",
-        "to": 12
-    },
-    "BHD#1:0_1": {
-        "from": 77,
-        "id": "BHD#1:0_1",
-        "polarity": "positive",
-        "sentence": "The hot dogs are good, yes, but the reason to get over here is the fantastic pork croquette sandwich, perfect on its supermarket squishy bun.",
-        "term": "pork croquette sandwich",
-        "to": 100
-    },
-    "BHD#1:0_2": {
-        "from": 137,
-        "id": "BHD#1:0_2",
-        "polarity": "positive",
-        "sentence": "The hot dogs are good, yes, but the reason to get over here is the fantastic pork croquette sandwich, perfect on its supermarket squishy bun.",
-        "term": "bun",
-        "to": 140
-    },
-    "BHD#4:0_0": {
-        "from": 6,
-        "id": "BHD#4:0_0",
-        "polarity": "positive",
-        "sentence": "Great Hot Dogs!",
-        "term": "Hot Dogs",
-        "to": 14
     },
     "BHD#4:2_0": {
         "from": 52,
@@ -711,14 +423,6 @@
         "term": "Slamwich",
         "to": 48
     },
-    "BHD#4:4_0": {
-        "from": 9,
-        "id": "BHD#4:4_0",
-        "polarity": "positive",
-        "sentence": "Going to Bark is always worth the train ride, and will make your tongue and belly very happy!",
-        "term": "Bark",
-        "to": 13
-    },
     "BHD#4:5_0": {
         "from": 117,
         "id": "BHD#4:5_0",
@@ -726,30 +430,6 @@
         "sentence": "Only complaint is the pricing--I believe it would be more reasonable to pay a dollar less on each item listed on the menu.",
         "term": "menu",
         "to": 121
-    },
-    "BHD#4:6_0": {
-        "from": 23,
-        "id": "BHD#4:6_0",
-        "polarity": "positive",
-        "sentence": "But nonetheless--great spot, great food.",
-        "term": "spot",
-        "to": 27
-    },
-    "BHD#4:6_1": {
-        "from": 35,
-        "id": "BHD#4:6_1",
-        "polarity": "positive",
-        "sentence": "But nonetheless--great spot, great food.",
-        "term": "food",
-        "to": 39
-    },
-    "BHD#6:0_0": {
-        "from": 6,
-        "id": "BHD#6:0_0",
-        "polarity": "positive",
-        "sentence": "great hot dogs..",
-        "term": "hot dogs",
-        "to": 14
     },
     "BHD#6:1_0": {
         "from": 4,
@@ -759,38 +439,6 @@
         "term": "hot dogs",
         "to": 12
     },
-    "BHD#6:2_0": {
-        "from": 6,
-        "id": "BHD#6:2_0",
-        "polarity": "positive",
-        "sentence": "great toppings definitely a place you need to check out for late night munchies or a mid day boost!",
-        "term": "toppings",
-        "to": 14
-    },
-    "BHD#6:2_1": {
-        "from": 28,
-        "id": "BHD#6:2_1",
-        "polarity": "positive",
-        "sentence": "great toppings definitely a place you need to check out for late night munchies or a mid day boost!",
-        "term": "place",
-        "to": 33
-    },
-    "BHD#7:0_0": {
-        "from": 14,
-        "id": "BHD#7:0_0",
-        "polarity": "positive",
-        "sentence": "amazing fresh dogs but best of all endless toppings!!!",
-        "term": "dogs",
-        "to": 18
-    },
-    "BHD#7:0_1": {
-        "from": 43,
-        "id": "BHD#7:0_1",
-        "polarity": "positive",
-        "sentence": "amazing fresh dogs but best of all endless toppings!!!",
-        "term": "toppings",
-        "to": 51
-    },
     "BHD#7:1_0": {
         "from": 23,
         "id": "BHD#7:1_0",
@@ -798,22 +446,6 @@
         "sentence": "this place had ALL the trimmings and i mean all.",
         "term": "trimmings",
         "to": 32
-    },
-    "BHD#7:3_0": {
-        "from": 16,
-        "id": "BHD#7:3_0",
-        "polarity": "positive",
-        "sentence": "amazing fun for hot dog lovers of all ages PLEASE do yourself a favor and check this place out!!!!",
-        "term": "hot dog",
-        "to": 23
-    },
-    "BHD#7:3_1": {
-        "from": 85,
-        "id": "BHD#7:3_1",
-        "polarity": "positive",
-        "sentence": "amazing fun for hot dog lovers of all ages PLEASE do yourself a favor and check this place out!!!!",
-        "term": "place",
-        "to": 90
     },
     "BHD#8:0_0": {
         "from": 7,
@@ -855,22 +487,6 @@
         "term": "Dog",
         "to": 9
     },
-    "BHD#9:1_0": {
-        "from": 19,
-        "id": "BHD#9:1_0",
-        "polarity": "positive",
-        "sentence": "An awesome organic dog, and a conscious eco friendly establishment.",
-        "term": "dog",
-        "to": 22
-    },
-    "BHD#9:1_1": {
-        "from": 53,
-        "id": "BHD#9:1_1",
-        "polarity": "positive",
-        "sentence": "An awesome organic dog, and a conscious eco friendly establishment.",
-        "term": "establishment",
-        "to": 66
-    },
     "BzG#1:0_0": {
         "from": 4,
         "id": "BzG#1:0_0",
@@ -878,22 +494,6 @@
         "sentence": "The Cypriot restaurant has a lot going for it.",
         "term": "Cypriot restaurant",
         "to": 22
-    },
-    "BzG#1:1_0": {
-        "from": 13,
-        "id": "BzG#1:1_0",
-        "polarity": "positive",
-        "sentence": "But the best pork souvlaki I ever had is the main thing.",
-        "term": "pork souvlaki",
-        "to": 26
-    },
-    "BzG#2:0_0": {
-        "from": 6,
-        "id": "BzG#2:0_0",
-        "polarity": "positive",
-        "sentence": "Great place, great value.",
-        "term": "place",
-        "to": 11
     },
     "BzG#2:1_0": {
         "from": 4,
@@ -910,22 +510,6 @@
         "sentence": "The atmosphere is relaxed and casual.",
         "term": "atmosphere",
         "to": 14
-    },
-    "BzG#2:3_0": {
-        "from": 13,
-        "id": "BzG#2:3_0",
-        "polarity": "positive",
-        "sentence": "It's a great place to order from or sit-in.",
-        "term": "place",
-        "to": 18
-    },
-    "BzG#4:0_0": {
-        "from": 67,
-        "id": "BzG#4:0_0",
-        "polarity": "positive",
-        "sentence": "This small Astoria souvlaki spot makes what many consider the best gyros in New York.",
-        "term": "gyros",
-        "to": 72
     },
     "BzG#4:2_0": {
         "from": 34,
@@ -959,22 +543,6 @@
         "term": "ingredients",
         "to": 193
     },
-    "BzG#4:3_0": {
-        "from": 16,
-        "id": "BzG#4:3_0",
-        "polarity": "positive",
-        "sentence": "All the various Greek and Cypriot dishes are excellent, but the gyro is the reason to come--if you don't eat one your trip was wasted.",
-        "term": "Greek and Cypriot dishes",
-        "to": 40
-    },
-    "BzG#4:3_1": {
-        "from": 64,
-        "id": "BzG#4:3_1",
-        "polarity": "positive",
-        "sentence": "All the various Greek and Cypriot dishes are excellent, but the gyro is the reason to come--if you don't eat one your trip was wasted.",
-        "term": "gyro",
-        "to": 68
-    },
     "CLF#1:0_0": {
         "from": 30,
         "id": "CLF#1:0_0",
@@ -982,22 +550,6 @@
         "sentence": "A beautifully designed dreamy Egyptian restaurant that gets sceney at night.",
         "term": "Egyptian restaurant",
         "to": 49
-    },
-    "CLF#1:1_0": {
-        "from": 19,
-        "id": "CLF#1:1_0",
-        "polarity": "positive",
-        "sentence": "Watch the talented belly dancers as you enjoy delicious baba ganoush that's more lemony than smoky.",
-        "term": "belly dancers",
-        "to": 32
-    },
-    "CLF#1:1_1": {
-        "from": 56,
-        "id": "CLF#1:1_1",
-        "polarity": "positive",
-        "sentence": "Watch the talented belly dancers as you enjoy delicious baba ganoush that's more lemony than smoky.",
-        "term": "baba ganoush",
-        "to": 68
     },
     "CLF#1:2_0": {
         "from": 16,
@@ -1014,22 +566,6 @@
         "sentence": "The place is beautiful!",
         "term": "place",
         "to": 9
-    },
-    "CLF#3:12_0": {
-        "from": 4,
-        "id": "CLF#3:12_0",
-        "polarity": "positive",
-        "sentence": "The hostess was very pleasant.",
-        "term": "hostess",
-        "to": 11
-    },
-    "CLF#3:13_0": {
-        "from": 17,
-        "id": "CLF#3:13_0",
-        "polarity": "negative",
-        "sentence": "However, our $14 drinks were were horrible!",
-        "term": "drinks",
-        "to": 23
     },
     "CLF#3:18_0": {
         "from": 42,
@@ -1079,14 +615,6 @@
         "term": "dinner",
         "to": 40
     },
-    "CLF#3:28_0": {
-        "from": 211,
-        "id": "CLF#3:28_0",
-        "polarity": "negative",
-        "sentence": "By the time we left our wallets were empy and so were our stomachs AND we missed the show we were supposed to see following our dinner, which would have been acceptable if we got to enjoy the experience of good food and belly dancers!",
-        "term": "food",
-        "to": 215
-    },
     "CLF#3:29_0": {
         "from": 101,
         "id": "CLF#3:29_0",
@@ -1119,14 +647,6 @@
         "term": "wait",
         "to": 84
     },
-    "CLF#4:0_0": {
-        "from": 13,
-        "id": "CLF#4:0_0",
-        "polarity": "negative",
-        "sentence": "Single Worst Restaurant in Manhattan",
-        "term": "Restaurant",
-        "to": 23
-    },
     "CLF#4:10_0": {
         "from": 5,
         "id": "CLF#4:10_0",
@@ -1142,14 +662,6 @@
         "sentence": "It is quite a spectacular scene i'll give them that.",
         "term": "scene",
         "to": 31
-    },
-    "CLF#4:12_0": {
-        "from": 4,
-        "id": "CLF#4:12_0",
-        "polarity": "neutral",
-        "sentence": "The decor however seems to be the distraction so you won't notice that you just payed 300 bucks for some cold eggplant that took 2 FRICKIN HOURS TO COME!!!!",
-        "term": "decor",
-        "to": 9
     },
     "CLF#4:12_1": {
         "from": 110,
@@ -1167,38 +679,6 @@
         "term": "place",
         "to": 14
     },
-    "CLF#4:1_0": {
-        "from": 44,
-        "id": "CLF#4:1_0",
-        "polarity": "positive",
-        "sentence": "I'll being with a couple of positives: cool decor, good pita and hummus, and grilled octopus that was actually pretty tasty.",
-        "term": "decor",
-        "to": 49
-    },
-    "CLF#4:1_1": {
-        "from": 56,
-        "id": "CLF#4:1_1",
-        "polarity": "positive",
-        "sentence": "I'll being with a couple of positives: cool decor, good pita and hummus, and grilled octopus that was actually pretty tasty.",
-        "term": "pita",
-        "to": 60
-    },
-    "CLF#4:1_2": {
-        "from": 65,
-        "id": "CLF#4:1_2",
-        "polarity": "positive",
-        "sentence": "I'll being with a couple of positives: cool decor, good pita and hummus, and grilled octopus that was actually pretty tasty.",
-        "term": "hummus",
-        "to": 71
-    },
-    "CLF#4:1_3": {
-        "from": 77,
-        "id": "CLF#4:1_3",
-        "polarity": "positive",
-        "sentence": "I'll being with a couple of positives: cool decor, good pita and hummus, and grilled octopus that was actually pretty tasty.",
-        "term": "grilled octopus",
-        "to": 92
-    },
     "CLF#4:3_0": {
         "from": 47,
         "id": "CLF#4:3_0",
@@ -1214,30 +694,6 @@
         "sentence": "Stepping into Casa La Femme last night was a true experience unlike any other in New York!",
         "term": "Casa La Femme",
         "to": 27
-    },
-    "CLF#5:2_0": {
-        "from": 26,
-        "id": "CLF#5:2_0",
-        "polarity": "positive",
-        "sentence": "Highly impressed from the decor to the food to the hospitality to the great night I had!",
-        "term": "decor",
-        "to": 31
-    },
-    "CLF#5:2_1": {
-        "from": 39,
-        "id": "CLF#5:2_1",
-        "polarity": "positive",
-        "sentence": "Highly impressed from the decor to the food to the hospitality to the great night I had!",
-        "term": "food",
-        "to": 43
-    },
-    "CLF#5:3_0": {
-        "from": 17,
-        "id": "CLF#5:3_0",
-        "polarity": "positive",
-        "sentence": "The have a great cocktail with Citrus Vodka and lemon and lime juice and mint leaves that is to die for!",
-        "term": "cocktail with Citrus Vodka and lemon and lime juice and mint leaves",
-        "to": 84
     },
     "CLF#5:4_0": {
         "from": 0,
@@ -1263,38 +719,6 @@
         "term": "restaurant",
         "to": 48
     },
-    "CLF#6:1_0": {
-        "from": 4,
-        "id": "CLF#6:1_0",
-        "polarity": "negative",
-        "sentence": "The service leaves much to be desired, from feeling like you are rushed the place your order, to being ignored the rest of the night.",
-        "term": "service",
-        "to": 11
-    },
-    "CLF#6:5_0": {
-        "from": 63,
-        "id": "CLF#6:5_0",
-        "polarity": "negative",
-        "sentence": "They are extremely rude, not even apologizing for the horrible service we got and handing us a bill well over $500 for some drinks adn their pita bread!",
-        "term": "service",
-        "to": 70
-    },
-    "CLF#6:5_1": {
-        "from": 124,
-        "id": "CLF#6:5_1",
-        "polarity": "negative",
-        "sentence": "They are extremely rude, not even apologizing for the horrible service we got and handing us a bill well over $500 for some drinks adn their pita bread!",
-        "term": "drinks",
-        "to": 130
-    },
-    "CLF#6:5_2": {
-        "from": 141,
-        "id": "CLF#6:5_2",
-        "polarity": "negative",
-        "sentence": "They are extremely rude, not even apologizing for the horrible service we got and handing us a bill well over $500 for some drinks adn their pita bread!",
-        "term": "pita bread",
-        "to": 151
-    },
     "CLF#7:0_0": {
         "from": 9,
         "id": "CLF#7:0_0",
@@ -1302,22 +726,6 @@
         "sentence": "Gorgeous place ideal for a romantic dinner",
         "term": "place",
         "to": 14
-    },
-    "CLF#7:2_0": {
-        "from": 18,
-        "id": "CLF#7:2_0",
-        "polarity": "positive",
-        "sentence": "I book a gorgeous white organza tent which included a four course prix fix menu which we enjoyed a lot.",
-        "term": "white organza tent",
-        "to": 36
-    },
-    "CLF#7:2_1": {
-        "from": 54,
-        "id": "CLF#7:2_1",
-        "polarity": "positive",
-        "sentence": "I book a gorgeous white organza tent which included a four course prix fix menu which we enjoyed a lot.",
-        "term": "four course prix fix menu",
-        "to": 79
     },
     "CLF#7:3_0": {
         "from": 4,
@@ -1335,30 +743,6 @@
         "term": "waiter",
         "to": 41
     },
-    "CLF#7:4_0": {
-        "from": 23,
-        "id": "CLF#7:4_0",
-        "polarity": "positive",
-        "sentence": "I completely recommend Casa La Femme for any special occasion and to REALLY impress your date.",
-        "term": "Casa La Femme",
-        "to": 36
-    },
-    "CLF#8:0_0": {
-        "from": 5,
-        "id": "CLF#8:0_0",
-        "polarity": "negative",
-        "sentence": "Poor service and management",
-        "term": "service",
-        "to": 12
-    },
-    "CLF#8:0_1": {
-        "from": 17,
-        "id": "CLF#8:0_1",
-        "polarity": "negative",
-        "sentence": "Poor service and management",
-        "term": "management",
-        "to": 27
-    },
     "CLF#8:1_0": {
         "from": 17,
         "id": "CLF#8:1_0",
@@ -1366,22 +750,6 @@
         "sentence": "Don\u2019t go to this place!",
         "term": "place",
         "to": 22
-    },
-    "CLF#8:2_0": {
-        "from": 27,
-        "id": "CLF#8:2_0",
-        "polarity": "negative",
-        "sentence": "Had an awful experience at Casa la Femme on a Saturday dinner.",
-        "term": "Casa la Femme",
-        "to": 40
-    },
-    "CLF#8:6_0": {
-        "from": 4,
-        "id": "CLF#8:6_0",
-        "polarity": "negative",
-        "sentence": "The manager was rude and handled the situation extremely poorly.",
-        "term": "manager",
-        "to": 11
     },
     "CLF#8:9_0": {
         "from": 35,
@@ -1447,22 +815,6 @@
         "term": "service",
         "to": 54
     },
-    "DBG#2:6_0": {
-        "from": 87,
-        "id": "DBG#2:6_0",
-        "polarity": "negative",
-        "sentence": "However, once I received my predictably mediocre order of what Dokebi thinks passes as Korean fair, (sometimes you have to settle when it's your only option), I got through about half my kimchee before I found a piece of random lettuce accompanied by a far more disgusting, slimy, clearly bad piece of fish skin.",
-        "term": "Korean fair",
-        "to": 98
-    },
-    "DBG#2:6_1": {
-        "from": 187,
-        "id": "DBG#2:6_1",
-        "polarity": "negative",
-        "sentence": "However, once I received my predictably mediocre order of what Dokebi thinks passes as Korean fair, (sometimes you have to settle when it's your only option), I got through about half my kimchee before I found a piece of random lettuce accompanied by a far more disgusting, slimy, clearly bad piece of fish skin.",
-        "term": "kimchee",
-        "to": 194
-    },
     "DBG#2:8_0": {
         "from": 38,
         "id": "DBG#2:8_0",
@@ -1470,14 +822,6 @@
         "sentence": "My main concern was the sanity of the food that was being sent out to myself and others, but I would be lying is I said that as someone who has worked in restaurants since the age of fifteen I was expecting at least a minimal effort on the part of the restaurant to amend the situation.",
         "term": "food",
         "to": 42
-    },
-    "DBG#6:0_0": {
-        "from": 6,
-        "id": "DBG#6:0_0",
-        "polarity": "positive",
-        "sentence": "Great Shabu Shabu",
-        "term": "Shabu Shabu",
-        "to": 17
     },
     "DBG#6:4_0": {
         "from": 23,
@@ -1494,62 +838,6 @@
         "sentence": "But for the Shabu Shabu, you won't find much better in NY.",
         "term": "Shabu Shabu",
         "to": 23
-    },
-    "DBG#6:7_0": {
-        "from": 4,
-        "id": "DBG#6:7_0",
-        "polarity": "positive",
-        "sentence": "The meat is fresh, the sauces are great, you get kimchi and a salad free with your meal and service is good too.",
-        "term": "meat",
-        "to": 8
-    },
-    "DBG#6:7_1": {
-        "from": 23,
-        "id": "DBG#6:7_1",
-        "polarity": "positive",
-        "sentence": "The meat is fresh, the sauces are great, you get kimchi and a salad free with your meal and service is good too.",
-        "term": "sauces",
-        "to": 29
-    },
-    "DBG#6:7_2": {
-        "from": 49,
-        "id": "DBG#6:7_2",
-        "polarity": "positive",
-        "sentence": "The meat is fresh, the sauces are great, you get kimchi and a salad free with your meal and service is good too.",
-        "term": "kimchi",
-        "to": 55
-    },
-    "DBG#6:7_3": {
-        "from": 62,
-        "id": "DBG#6:7_3",
-        "polarity": "positive",
-        "sentence": "The meat is fresh, the sauces are great, you get kimchi and a salad free with your meal and service is good too.",
-        "term": "salad",
-        "to": 67
-    },
-    "DBG#6:7_4": {
-        "from": 83,
-        "id": "DBG#6:7_4",
-        "polarity": "positive",
-        "sentence": "The meat is fresh, the sauces are great, you get kimchi and a salad free with your meal and service is good too.",
-        "term": "meal",
-        "to": 87
-    },
-    "DBG#6:7_5": {
-        "from": 92,
-        "id": "DBG#6:7_5",
-        "polarity": "positive",
-        "sentence": "The meat is fresh, the sauces are great, you get kimchi and a salad free with your meal and service is good too.",
-        "term": "service",
-        "to": 99
-    },
-    "DBG#7:10_0": {
-        "from": 64,
-        "id": "DBG#7:10_0",
-        "polarity": "negative",
-        "sentence": "The real problem I had with this place was the complete lack of service.",
-        "term": "service",
-        "to": 71
     },
     "DBG#7:15_0": {
         "from": 42,
@@ -1574,62 +862,6 @@
         "sentence": "The bibimbap was average, but the stone bowl wasn't even close to sizzling.",
         "term": "stone bowl",
         "to": 44
-    },
-    "DBG#7:5_0": {
-        "from": 39,
-        "id": "DBG#7:5_0",
-        "polarity": "negative",
-        "sentence": "Too bad I had paid an extra $2 for the stone bowl.",
-        "term": "stone bowl",
-        "to": 49
-    },
-    "DBG#7:6_0": {
-        "from": 4,
-        "id": "DBG#7:6_0",
-        "polarity": "negative",
-        "sentence": "The nakgi-bokum was horrible.",
-        "term": "nakgi-bokum",
-        "to": 15
-    },
-    "DBG#7:7_0": {
-        "from": 17,
-        "id": "DBG#7:7_0",
-        "polarity": "negative",
-        "sentence": "Easily the worst stir-fried squid I've ever tasted.",
-        "term": "stir-fried squid",
-        "to": 33
-    },
-    "DBG#7:8_0": {
-        "from": 4,
-        "id": "DBG#7:8_0",
-        "polarity": "negative",
-        "sentence": "The sauce tasted more like Chinese fast food than decent Korean.",
-        "term": "sauce",
-        "to": 9
-    },
-    "DBG#7:9_0": {
-        "from": 4,
-        "id": "DBG#7:9_0",
-        "polarity": "neutral",
-        "sentence": "The side dishes were passable, and I did get a refill upon request.",
-        "term": "side dishes",
-        "to": 15
-    },
-    "DBG#7:9_1": {
-        "from": 4,
-        "id": "DBG#7:9_1",
-        "polarity": "positive",
-        "sentence": "The side dishes were passable, and I did get a refill upon request.",
-        "term": "side dishes",
-        "to": 15
-    },
-    "EVPK#10:0_0": {
-        "from": 12,
-        "id": "EVPK#10:0_0",
-        "polarity": "positive",
-        "sentence": "Super YUMMY Pizza!",
-        "term": "Pizza",
-        "to": 17
     },
     "EVPK#10:1_0": {
         "from": 91,
@@ -1663,30 +895,6 @@
         "term": "half/half pizza",
         "to": 22
     },
-    "EVPK#4:0_0": {
-        "from": 7,
-        "id": "EVPK#4:0_0",
-        "polarity": "positive",
-        "sentence": "i love margherita pizza \u2013 i looove east village pizza",
-        "term": "margherita pizza",
-        "to": 23
-    },
-    "EVPK#4:0_1": {
-        "from": 35,
-        "id": "EVPK#4:0_1",
-        "polarity": "positive",
-        "sentence": "i love margherita pizza \u2013 i looove east village pizza",
-        "term": "east village pizza",
-        "to": 53
-    },
-    "EVPK#4:1_0": {
-        "from": 10,
-        "id": "EVPK#4:1_0",
-        "polarity": "positive",
-        "sentence": "Love this place, every time we are in the city this is one of the places we always go.",
-        "term": "place",
-        "to": 15
-    },
     "EVPK#4:2_0": {
         "from": 17,
         "id": "EVPK#4:2_0",
@@ -1695,38 +903,6 @@
         "term": "slice of NYC pizza",
         "to": 35
     },
-    "EVPK#4:3_0": {
-        "from": 4,
-        "id": "EVPK#4:3_0",
-        "polarity": "positive",
-        "sentence": "The crust has a great bite and a good chew, the sauce is light with a nice acidity to it, the salt from the cheese is great, really heightens the flavor of all the other components.",
-        "term": "crust",
-        "to": 9
-    },
-    "EVPK#4:3_1": {
-        "from": 48,
-        "id": "EVPK#4:3_1",
-        "polarity": "positive",
-        "sentence": "The crust has a great bite and a good chew, the sauce is light with a nice acidity to it, the salt from the cheese is great, really heightens the flavor of all the other components.",
-        "term": "sauce",
-        "to": 53
-    },
-    "EVPK#4:3_2": {
-        "from": 108,
-        "id": "EVPK#4:3_2",
-        "polarity": "positive",
-        "sentence": "The crust has a great bite and a good chew, the sauce is light with a nice acidity to it, the salt from the cheese is great, really heightens the flavor of all the other components.",
-        "term": "cheese",
-        "to": 114
-    },
-    "EVPK#4:4_0": {
-        "from": 22,
-        "id": "EVPK#4:4_0",
-        "polarity": "positive",
-        "sentence": "Personally I like the margherita pizza better, but they are all good.",
-        "term": "margherita pizza",
-        "to": 38
-    },
     "EVPK#9:0_0": {
         "from": 13,
         "id": "EVPK#9:0_0",
@@ -1734,14 +910,6 @@
         "sentence": "cirspy crust margherita pizza",
         "term": "margherita pizza",
         "to": 29
-    },
-    "EVPK#9:2_0": {
-        "from": 19,
-        "id": "EVPK#9:2_0",
-        "polarity": "positive",
-        "sentence": "it was really good pizza.",
-        "term": "pizza",
-        "to": 24
     },
     "EVPK#9:3_0": {
         "from": 4,
@@ -1758,14 +926,6 @@
         "sentence": "the crust was imazingly cooked well and pizza was fully loaded:):):)",
         "term": "pizza",
         "to": 45
-    },
-    "FF#10:0_0": {
-        "from": 4,
-        "id": "FF#10:0_0",
-        "polarity": "negative",
-        "sentence": "bad staff",
-        "term": "staff",
-        "to": 9
     },
     "FF#10:11_0": {
         "from": 25,
@@ -1790,22 +950,6 @@
         "sentence": "I generally like this place.",
         "term": "place",
         "to": 27
-    },
-    "FF#10:2_0": {
-        "from": 4,
-        "id": "FF#10:2_0",
-        "polarity": "positive",
-        "sentence": "The food is good.",
-        "term": "food",
-        "to": 8
-    },
-    "FF#10:3_0": {
-        "from": 18,
-        "id": "FF#10:3_0",
-        "polarity": "positive",
-        "sentence": "The design of the space is good.",
-        "term": "space",
-        "to": 23
     },
     "FF#10:4_0": {
         "from": 8,
@@ -1871,38 +1015,6 @@
         "term": "spinach",
         "to": 112
     },
-    "FF#3:19_0": {
-        "from": 45,
-        "id": "FF#3:19_0",
-        "polarity": "negative",
-        "sentence": "This is where it really really gets bad: the manager said, there is absolutely nothing we can do, it's a matter of taste that she didn't like it, and I cannot comp it.",
-        "term": "manager",
-        "to": 52
-    },
-    "FF#3:23_0": {
-        "from": 4,
-        "id": "FF#3:23_0",
-        "polarity": "negative",
-        "sentence": "The manager came to the table and said we can do what we want, so we paid for what we did enjoy, the drinks and appetizers, and walked out.",
-        "term": "manager",
-        "to": 11
-    },
-    "FF#3:23_1": {
-        "from": 101,
-        "id": "FF#3:23_1",
-        "polarity": "positive",
-        "sentence": "The manager came to the table and said we can do what we want, so we paid for what we did enjoy, the drinks and appetizers, and walked out.",
-        "term": "drinks",
-        "to": 107
-    },
-    "FF#3:23_2": {
-        "from": 112,
-        "id": "FF#3:23_2",
-        "polarity": "positive",
-        "sentence": "The manager came to the table and said we can do what we want, so we paid for what we did enjoy, the drinks and appetizers, and walked out.",
-        "term": "appetizers",
-        "to": 122
-    },
     "FF#3:25_0": {
         "from": 5,
         "id": "FF#3:25_0",
@@ -1910,14 +1022,6 @@
         "sentence": "THIS STAFF SHOULD BE FIRED.",
         "term": "STAFF",
         "to": 10
-    },
-    "FF#3:5_0": {
-        "from": 43,
-        "id": "FF#3:5_0",
-        "polarity": "negative",
-        "sentence": "Everything was going good until we got our meals.",
-        "term": "meals",
-        "to": 48
     },
     "FF#3:6_0": {
         "from": 23,
@@ -1934,94 +1038,6 @@
         "sentence": "It was served with skin, over a bed of extremely undercooked spinach and mashed potatoes.",
         "term": "spinach",
         "to": 68
-    },
-    "FF#3:9_0": {
-        "from": 29,
-        "id": "FF#3:9_0",
-        "polarity": "negative",
-        "sentence": "I took one bite from the $24 salmon, and I have never, in the 17 years I have been going to restaurants tasted salmon as fishy, as dry, and as bland as the one in Flatbush Farms.",
-        "term": "salmon",
-        "to": 35
-    },
-    "FF#4:3_0": {
-        "from": 4,
-        "id": "FF#4:3_0",
-        "polarity": "negative",
-        "sentence": "The servers at Flatbush Farm appear to have perfected that ghastly technique of making you feel guilty and ashamed for deigning to attract their attention.",
-        "term": "servers",
-        "to": 11
-    },
-    "FF#4:7_0": {
-        "from": 12,
-        "id": "FF#4:7_0",
-        "polarity": "negative",
-        "sentence": "A different server enhanced the fun, dumping our entrees in front of us halfway through our appetizer (which was delicious).",
-        "term": "server",
-        "to": 18
-    },
-    "FF#4:7_1": {
-        "from": 92,
-        "id": "FF#4:7_1",
-        "polarity": "positive",
-        "sentence": "A different server enhanced the fun, dumping our entrees in front of us halfway through our appetizer (which was delicious).",
-        "term": "appetizer",
-        "to": 101
-    },
-    "FF#4:8_0": {
-        "from": 12,
-        "id": "FF#4:8_0",
-        "polarity": "positive",
-        "sentence": "Overall the food quality was pretty good, though I hear the salmon is much better when it hasn't sat cooling in front of the guest.",
-        "term": "food",
-        "to": 16
-    },
-    "FF#4:9_0": {
-        "from": 21,
-        "id": "FF#4:9_0",
-        "polarity": "positive",
-        "sentence": "The place has a nice fit-out, some attractive furnishings and, from what I could tell, a reasonable wine list (I was given the food menu when I asked for the carte des vins)",
-        "term": "fit-out",
-        "to": 28
-    },
-    "FF#4:9_1": {
-        "from": 46,
-        "id": "FF#4:9_1",
-        "polarity": "positive",
-        "sentence": "The place has a nice fit-out, some attractive furnishings and, from what I could tell, a reasonable wine list (I was given the food menu when I asked for the carte des vins)",
-        "term": "furnishings",
-        "to": 57
-    },
-    "FF#4:9_2": {
-        "from": 100,
-        "id": "FF#4:9_2",
-        "polarity": "positive",
-        "sentence": "The place has a nice fit-out, some attractive furnishings and, from what I could tell, a reasonable wine list (I was given the food menu when I asked for the carte des vins)",
-        "term": "wine list",
-        "to": 109
-    },
-    "FF#6:12_0": {
-        "from": 42,
-        "id": "FF#6:12_0",
-        "polarity": "negative",
-        "sentence": "Shame on this place for the horrible rude staff and non-existent customer service.",
-        "term": "staff",
-        "to": 47
-    },
-    "FF#6:12_1": {
-        "from": 65,
-        "id": "FF#6:12_1",
-        "polarity": "negative",
-        "sentence": "Shame on this place for the horrible rude staff and non-existent customer service.",
-        "term": "customer service",
-        "to": 81
-    },
-    "FF#6:5_0": {
-        "from": 4,
-        "id": "FF#6:5_0",
-        "polarity": "negative",
-        "sentence": "The hostess was rude and I got a distinct feeling that they did not want to serve us.",
-        "term": "hostess",
-        "to": 11
     },
     "FF#6:6_0": {
         "from": 79,
@@ -2047,46 +1063,6 @@
         "term": "waitress",
         "to": 63
     },
-    "NP#10:0_0": {
-        "from": 5,
-        "id": "NP#10:0_0",
-        "polarity": "positive",
-        "sentence": "Best restaurant in Brooklyn",
-        "term": "restaurant",
-        "to": 15
-    },
-    "NP#10:2_0": {
-        "from": 6,
-        "id": "NP#10:2_0",
-        "polarity": "positive",
-        "sentence": "Great food, amazing service, this place is a class act.",
-        "term": "food",
-        "to": 10
-    },
-    "NP#10:2_1": {
-        "from": 20,
-        "id": "NP#10:2_1",
-        "polarity": "positive",
-        "sentence": "Great food, amazing service, this place is a class act.",
-        "term": "service",
-        "to": 27
-    },
-    "NP#10:2_2": {
-        "from": 34,
-        "id": "NP#10:2_2",
-        "polarity": "positive",
-        "sentence": "Great food, amazing service, this place is a class act.",
-        "term": "place",
-        "to": 39
-    },
-    "NP#10:3_0": {
-        "from": 4,
-        "id": "NP#10:3_0",
-        "polarity": "positive",
-        "sentence": "The veal was incredible last night.",
-        "term": "veal",
-        "to": 8
-    },
     "NP#10:5_0": {
         "from": 5,
         "id": "NP#10:5_0",
@@ -2110,38 +1086,6 @@
         "sentence": "Subtle food and service",
         "term": "service",
         "to": 23
-    },
-    "NP#3:2_0": {
-        "from": 38,
-        "id": "NP#3:2_0",
-        "polarity": "positive",
-        "sentence": "Noodle pudding is exactly the type of service and food I enjoy.",
-        "term": "service",
-        "to": 45
-    },
-    "NP#3:2_1": {
-        "from": 50,
-        "id": "NP#3:2_1",
-        "polarity": "positive",
-        "sentence": "Noodle pudding is exactly the type of service and food I enjoy.",
-        "term": "food",
-        "to": 54
-    },
-    "NP#3:3_0": {
-        "from": 27,
-        "id": "NP#3:3_0",
-        "polarity": "positive",
-        "sentence": "Servers are all different, Greg is my favorite.",
-        "term": "Greg",
-        "to": 31
-    },
-    "NP#3:4_0": {
-        "from": 83,
-        "id": "NP#3:4_0",
-        "polarity": "positive",
-        "sentence": "Sometimes tables don't understand his sense of humor but it's refreshing to have a server who has personality, professionalism, and respects the privacy of your dinner.",
-        "term": "server",
-        "to": 89
     },
     "NP#3:5_0": {
         "from": 41,
@@ -2167,14 +1111,6 @@
         "term": "bev",
         "to": 54
     },
-    "NP#3:7_0": {
-        "from": 37,
-        "id": "NP#3:7_0",
-        "polarity": "positive",
-        "sentence": "I go out to eat and like my courses, servers are patient and never rush courses or force another drink.",
-        "term": "servers",
-        "to": 44
-    },
     "NP#4:0_0": {
         "from": 14,
         "id": "NP#4:0_0",
@@ -2198,22 +1134,6 @@
         "sentence": "For a restaurant with such a good reputation and that is usually so packed, there was no reason for such a lack of intelligent customer service.",
         "term": "customer service",
         "to": 143
-    },
-    "NP#4:2_0": {
-        "from": 4,
-        "id": "NP#4:2_0",
-        "polarity": "positive",
-        "sentence": "The menu looked great, and the waiter was very nice, but when the food came, it was average.",
-        "term": "menu",
-        "to": 8
-    },
-    "NP#4:2_1": {
-        "from": 31,
-        "id": "NP#4:2_1",
-        "polarity": "positive",
-        "sentence": "The menu looked great, and the waiter was very nice, but when the food came, it was average.",
-        "term": "waiter",
-        "to": 37
     },
     "NP#4:2_2": {
         "from": 66,
@@ -2263,14 +1183,6 @@
         "term": "food",
         "to": 119
     },
-    "NP#9:0_0": {
-        "from": 5,
-        "id": "NP#9:0_0",
-        "polarity": "positive",
-        "sentence": "Best meal in a long time!",
-        "term": "meal",
-        "to": 9
-    },
     "NP#9:1_0": {
         "from": 0,
         "id": "NP#9:1_0",
@@ -2286,22 +1198,6 @@
         "sentence": "Mussles and calamari were superb Saturday evening.",
         "term": "calamari",
         "to": 20
-    },
-    "NP#9:2_0": {
-        "from": 10,
-        "id": "NP#9:2_0",
-        "polarity": "positive",
-        "sentence": "I had the Lamb special which was perfect.",
-        "term": "Lamb special",
-        "to": 22
-    },
-    "NP#9:3_0": {
-        "from": 18,
-        "id": "NP#9:3_0",
-        "polarity": "positive",
-        "sentence": "My father had the flank steak which was very good, and my mother had the swordfish.",
-        "term": "flank steak",
-        "to": 29
     },
     "P#10:0_0": {
         "from": 6,
@@ -2327,14 +1223,6 @@
         "term": "quesadilla",
         "to": 13
     },
-    "P#10:3_0": {
-        "from": 29,
-        "id": "P#10:3_0",
-        "polarity": "negative",
-        "sentence": "And $11 for a plate of bland guacamole?",
-        "term": "guacamole",
-        "to": 38
-    },
     "P#10:5_0": {
         "from": 28,
         "id": "P#10:5_0",
@@ -2342,22 +1230,6 @@
         "sentence": "Don't get me started on the margaritas, either.",
         "term": "margaritas",
         "to": 38
-    },
-    "P#10:9_0": {
-        "from": 67,
-        "id": "P#10:9_0",
-        "polarity": "negative",
-        "sentence": "Oh, and I never write reviews--I just was so moved by how bad this place was, I felt it was my duty to spread the word.",
-        "term": "place",
-        "to": 72
-    },
-    "P#1:0_0": {
-        "from": 6,
-        "id": "P#1:0_0",
-        "polarity": "negative",
-        "sentence": "WORST PLACE ON SMITH STREET IN BROOKLYN",
-        "term": "PLACE",
-        "to": 11
     },
     "P#1:1_0": {
         "from": 14,
@@ -2375,14 +1247,6 @@
         "term": "service",
         "to": 72
     },
-    "P#1:1_2": {
-        "from": 94,
-        "id": "P#1:1_2",
-        "polarity": "negative",
-        "sentence": "Very immature bartender, didnt know how to make specific drinks, service was so slowwwww, the food was not fresh or warm, waitresses were busy flirting with men at the bar and werent very attentive to all the customers.",
-        "term": "food",
-        "to": 98
-    },
     "P#1:1_3": {
         "from": 122,
         "id": "P#1:1_3",
@@ -2390,30 +1254,6 @@
         "sentence": "Very immature bartender, didnt know how to make specific drinks, service was so slowwwww, the food was not fresh or warm, waitresses were busy flirting with men at the bar and werent very attentive to all the customers.",
         "term": "waitresses",
         "to": 132
-    },
-    "P#1:2_0": {
-        "from": 29,
-        "id": "P#1:2_0",
-        "polarity": "negative",
-        "sentence": "I would never recommend this place to anybody even for a casual dinner.",
-        "term": "place",
-        "to": 34
-    },
-    "P#3:0_0": {
-        "from": 6,
-        "id": "P#3:0_0",
-        "polarity": "positive",
-        "sentence": "Great Atmosphere",
-        "term": "Atmosphere",
-        "to": 16
-    },
-    "P#3:2_0": {
-        "from": 23,
-        "id": "P#3:2_0",
-        "polarity": "positive",
-        "sentence": "I highly recommend the fish tacos, everything else was ok.",
-        "term": "fish tacos",
-        "to": 33
     },
     "P#3:3_0": {
         "from": 5,
@@ -2439,54 +1279,6 @@
         "term": "food",
         "to": 21
     },
-    "P#7:1_0": {
-        "from": 23,
-        "id": "P#7:1_0",
-        "polarity": "positive",
-        "sentence": "A coworker and I tried Pacifico after work a few Fridays and loved it.",
-        "term": "Pacifico",
-        "to": 31
-    },
-    "P#7:2_0": {
-        "from": 4,
-        "id": "P#7:2_0",
-        "polarity": "positive",
-        "sentence": "The atmosphere was great.",
-        "term": "atmosphere",
-        "to": 14
-    },
-    "P#7:3_0": {
-        "from": 4,
-        "id": "P#7:3_0",
-        "polarity": "positive",
-        "sentence": "The food we ordered was excellent, although I wouldn't say the margaritas were anything to write home about.",
-        "term": "food",
-        "to": 8
-    },
-    "P#7:3_1": {
-        "from": 63,
-        "id": "P#7:3_1",
-        "polarity": "neutral",
-        "sentence": "The food we ordered was excellent, although I wouldn't say the margaritas were anything to write home about.",
-        "term": "margaritas",
-        "to": 73
-    },
-    "P#7:4_0": {
-        "from": 4,
-        "id": "P#7:4_0",
-        "polarity": "neutral",
-        "sentence": "Our waitress wasn't mean, but not especially warm or attentive either.",
-        "term": "waitress",
-        "to": 12
-    },
-    "P#7:5_0": {
-        "from": 52,
-        "id": "P#7:5_0",
-        "polarity": "positive",
-        "sentence": "I must say I am surprised by the bad reviews of the restaurant earlier in the year, though.",
-        "term": "restaurant",
-        "to": 62
-    },
     "P#7:7_0": {
         "from": 89,
         "id": "P#7:7_0",
@@ -2502,38 +1294,6 @@
         "sentence": "Raymond the bartender rocks!",
         "term": "Raymond",
         "to": 7
-    },
-    "P#9:1_0": {
-        "from": 0,
-        "id": "P#9:1_0",
-        "polarity": "positive",
-        "sentence": "Pacifico is a great place to casually hang out.",
-        "term": "Pacifico",
-        "to": 8
-    },
-    "P#9:2_0": {
-        "from": 4,
-        "id": "P#9:2_0",
-        "polarity": "positive",
-        "sentence": "The drinks are great, especially when made by Raymond.",
-        "term": "drinks",
-        "to": 10
-    },
-    "P#9:2_1": {
-        "from": 46,
-        "id": "P#9:2_1",
-        "polarity": "positive",
-        "sentence": "The drinks are great, especially when made by Raymond.",
-        "term": "Raymond",
-        "to": 53
-    },
-    "P#9:3_0": {
-        "from": 4,
-        "id": "P#9:3_0",
-        "polarity": "positive",
-        "sentence": "The omlette for brunch is great...",
-        "term": "omlette for brunch",
-        "to": 22
     },
     "P#9:4_0": {
         "from": 4,
@@ -2575,70 +1335,6 @@
         "term": "portobello and asparagus mole",
         "to": 68
     },
-    "P#9:9_0": {
-        "from": 16,
-        "id": "P#9:9_0",
-        "polarity": "neutral",
-        "sentence": "Overall, decent food at a good price, with friendly people.",
-        "term": "food",
-        "to": 20
-    },
-    "P#9:9_1": {
-        "from": 16,
-        "id": "P#9:9_1",
-        "polarity": "positive",
-        "sentence": "Overall, decent food at a good price, with friendly people.",
-        "term": "food",
-        "to": 20
-    },
-    "P#9:9_2": {
-        "from": 52,
-        "id": "P#9:9_2",
-        "polarity": "positive",
-        "sentence": "Overall, decent food at a good price, with friendly people.",
-        "term": "people",
-        "to": 58
-    },
-    "PP#3:0_0": {
-        "from": 0,
-        "id": "PP#3:0_0",
-        "polarity": "positive",
-        "sentence": "Patsy's Pizza = true love",
-        "term": "Patsy's Pizza",
-        "to": 13
-    },
-    "PP#3:1_0": {
-        "from": 20,
-        "id": "PP#3:1_0",
-        "polarity": "positive",
-        "sentence": "Hands down the best pizza on the planet.",
-        "term": "pizza",
-        "to": 25
-    },
-    "PP#4:0_0": {
-        "from": 12,
-        "id": "PP#4:0_0",
-        "polarity": "positive",
-        "sentence": "I love this place",
-        "term": "place",
-        "to": 17
-    },
-    "PP#4:2_0": {
-        "from": 4,
-        "id": "PP#4:2_0",
-        "polarity": "positive",
-        "sentence": "The service was quick and friendly.",
-        "term": "service",
-        "to": 11
-    },
-    "PP#4:4_0": {
-        "from": 14,
-        "id": "PP#4:4_0",
-        "polarity": "positive",
-        "sentence": "I thought the restaurant was nice and clean.",
-        "term": "restaurant",
-        "to": 24
-    },
     "PP#4:5_0": {
         "from": 14,
         "id": "PP#4:5_0",
@@ -2679,70 +1375,6 @@
         "term": "pizza",
         "to": 17
     },
-    "PP#9:2_0": {
-        "from": 22,
-        "id": "PP#9:2_0",
-        "polarity": "negative",
-        "sentence": "Had no flavor and the staff is rude and not attentive.",
-        "term": "staff",
-        "to": 27
-    },
-    "RL#3:1_0": {
-        "from": 40,
-        "id": "RL#3:1_0",
-        "polarity": "positive",
-        "sentence": "im not necessarily fanatical about this place, but it was a fun time for low pirces.",
-        "term": "place",
-        "to": 45
-    },
-    "RL#3:2_0": {
-        "from": 0,
-        "id": "RL#3:2_0",
-        "polarity": "neutral",
-        "sentence": "lobster was good, nothing spectacular.",
-        "term": "lobster",
-        "to": 7
-    },
-    "RL#3:3_0": {
-        "from": 44,
-        "id": "RL#3:3_0",
-        "polarity": "neutral",
-        "sentence": "its just a fun place to go, not a five star restaraunt.",
-        "term": "restaraunt",
-        "to": 54
-    },
-    "RL#4:1_0": {
-        "from": 58,
-        "id": "RL#4:1_0",
-        "polarity": "positive",
-        "sentence": "I CAN EAT HERE EVERY DAY OF THE WEEK REALLY LOL LOVE THIS PLACE ...)",
-        "term": "PLACE",
-        "to": 63
-    },
-    "RL#7:1_0": {
-        "from": 12,
-        "id": "RL#7:1_0",
-        "polarity": "positive",
-        "sentence": "my favorite place lol",
-        "term": "place",
-        "to": 17
-    },
-    "RL#7:2_0": {
-        "from": 13,
-        "id": "RL#7:2_0",
-        "polarity": "positive",
-        "sentence": "i love their chicken pasta cant remember the name but is sooo good",
-        "term": "chicken pasta",
-        "to": 26
-    },
-    "RL#9:1_0": {
-        "from": 4,
-        "id": "RL#9:1_0",
-        "polarity": "positive",
-        "sentence": "the food is always fresh ...",
-        "term": "food",
-        "to": 8
-    },
     "TFS#10:2_0": {
         "from": 4,
         "id": "TFS#10:2_0",
@@ -2759,38 +1391,6 @@
         "term": "staff",
         "to": 46
     },
-    "TFS#10:3_0": {
-        "from": 4,
-        "id": "TFS#10:3_0",
-        "polarity": "negative",
-        "sentence": "The bread we received was horrible - rock hard and cold - and the \"free\" appetizer of olives was disappointing.",
-        "term": "bread",
-        "to": 9
-    },
-    "TFS#10:3_1": {
-        "from": 73,
-        "id": "TFS#10:3_1",
-        "polarity": "negative",
-        "sentence": "The bread we received was horrible - rock hard and cold - and the \"free\" appetizer of olives was disappointing.",
-        "term": "appetizer of olives",
-        "to": 92
-    },
-    "TFS#10:3_2": {
-        "from": 73,
-        "id": "TFS#10:3_2",
-        "polarity": "neutral",
-        "sentence": "The bread we received was horrible - rock hard and cold - and the \"free\" appetizer of olives was disappointing.",
-        "term": "appetizer of olives",
-        "to": 92
-    },
-    "TFS#10:4_0": {
-        "from": 13,
-        "id": "TFS#10:4_0",
-        "polarity": "positive",
-        "sentence": "However, our main course was wonderful.",
-        "term": "main course",
-        "to": 24
-    },
     "TFS#10:5_0": {
         "from": 6,
         "id": "TFS#10:5_0",
@@ -2806,22 +1406,6 @@
         "sentence": "I had fish and my husband had the filet - both of which exceeded our expectations.",
         "term": "filet",
         "to": 39
-    },
-    "TFS#10:6_0": {
-        "from": 22,
-        "id": "TFS#10:6_0",
-        "polarity": "positive",
-        "sentence": "The dessert (we had a pear torte) was good - but, once again, the staff was unable to provide appropriate drink suggestions.",
-        "term": "pear torte",
-        "to": 32
-    },
-    "TFS#10:6_1": {
-        "from": 66,
-        "id": "TFS#10:6_1",
-        "polarity": "negative",
-        "sentence": "The dessert (we had a pear torte) was good - but, once again, the staff was unable to provide appropriate drink suggestions.",
-        "term": "staff",
-        "to": 71
     },
     "TFS#10:7_0": {
         "from": 35,
@@ -2855,22 +1439,6 @@
         "term": "staff",
         "to": 84
     },
-    "TFS#11:0_0": {
-        "from": 33,
-        "id": "TFS#11:0_0",
-        "polarity": "negative",
-        "sentence": "I was speechless by the horrible food.",
-        "term": "food",
-        "to": 37
-    },
-    "TFS#11:1_0": {
-        "from": 55,
-        "id": "TFS#11:1_0",
-        "polarity": "negative",
-        "sentence": "I attended a holiday dinner at the restaurant, and the food was majorly disappointing.",
-        "term": "food",
-        "to": 59
-    },
     "TFS#11:3_0": {
         "from": 22,
         "id": "TFS#11:3_0",
@@ -2894,46 +1462,6 @@
         "sentence": "This place survives on reputation alone.",
         "term": "place",
         "to": 10
-    },
-    "TFS#2:0_0": {
-        "from": 0,
-        "id": "TFS#2:0_0",
-        "polarity": "positive",
-        "sentence": "The Four Seasons restaurant is a great experience.",
-        "term": "The Four Seasons restaurant",
-        "to": 27
-    },
-    "TFS#2:1_0": {
-        "from": 4,
-        "id": "TFS#2:1_0",
-        "polarity": "positive",
-        "sentence": "The food is great and the environment is even better.",
-        "term": "food",
-        "to": 8
-    },
-    "TFS#2:1_1": {
-        "from": 26,
-        "id": "TFS#2:1_1",
-        "polarity": "positive",
-        "sentence": "The food is great and the environment is even better.",
-        "term": "environment",
-        "to": 37
-    },
-    "TFS#5:16_0": {
-        "from": 0,
-        "id": "TFS#5:16_0",
-        "polarity": "neutral",
-        "sentence": "Vanison was good but not amazing.",
-        "term": "Vanison",
-        "to": 7
-    },
-    "TFS#5:17_0": {
-        "from": 0,
-        "id": "TFS#5:17_0",
-        "polarity": "positive",
-        "sentence": "Bison was quite excellent however.",
-        "term": "Bison",
-        "to": 5
     },
     "TFS#5:18_0": {
         "from": 0,
@@ -2966,22 +1494,6 @@
         "sentence": "The Four Seasons has history and it is a sort of landmark of New York City restaurants, but trust me, they will charge you through the nose just so that you can say \"I've been to the four seasons restaurant\".",
         "term": "The Four Seasons",
         "to": 16
-    },
-    "TFS#5:25_0": {
-        "from": 16,
-        "id": "TFS#5:25_0",
-        "polarity": "positive",
-        "sentence": "All in all, the food was great (except for the dessserts).",
-        "term": "food",
-        "to": 20
-    },
-    "TFS#5:25_1": {
-        "from": 47,
-        "id": "TFS#5:25_1",
-        "polarity": "negative",
-        "sentence": "All in all, the food was great (except for the dessserts).",
-        "term": "dessserts",
-        "to": 56
     },
     "TFS#5:26_0": {
         "from": 4,
@@ -3023,22 +1535,6 @@
         "term": "Service",
         "to": 7
     },
-    "TFS#5:4_0": {
-        "from": 10,
-        "id": "TFS#5:4_0",
-        "polarity": "positive",
-        "sentence": "Look, the appetizers were really good.",
-        "term": "appetizers",
-        "to": 20
-    },
-    "TFS#5:5_0": {
-        "from": 4,
-        "id": "TFS#5:5_0",
-        "polarity": "positive",
-        "sentence": "The entree was also very good.",
-        "term": "entree",
-        "to": 10
-    },
     "TFS#5:7_0": {
         "from": 31,
         "id": "TFS#5:7_0",
@@ -3071,30 +1567,6 @@
         "term": "The Four Seasons",
         "to": 37
     },
-    "TFS#8:1_0": {
-        "from": 4,
-        "id": "TFS#8:1_0",
-        "polarity": "positive",
-        "sentence": "The food was excellent as well as service, however, I left The Four Seasons very dissappointed.",
-        "term": "food",
-        "to": 8
-    },
-    "TFS#8:1_1": {
-        "from": 34,
-        "id": "TFS#8:1_1",
-        "polarity": "positive",
-        "sentence": "The food was excellent as well as service, however, I left The Four Seasons very dissappointed.",
-        "term": "service",
-        "to": 41
-    },
-    "TFS#8:1_2": {
-        "from": 59,
-        "id": "TFS#8:1_2",
-        "polarity": "negative",
-        "sentence": "The food was excellent as well as service, however, I left The Four Seasons very dissappointed.",
-        "term": "The Four Seasons",
-        "to": 75
-    },
     "TFS#8:2_0": {
         "from": 15,
         "id": "TFS#8:2_0",
@@ -3103,70 +1575,6 @@
         "term": "dinner",
         "to": 21
     },
-    "TM#3:0_0": {
-        "from": 6,
-        "id": "TM#3:0_0",
-        "polarity": "positive",
-        "sentence": "Great Indian Food!",
-        "term": "Indian Food",
-        "to": 17
-    },
-    "TM#3:3_0": {
-        "from": 4,
-        "id": "TM#3:3_0",
-        "polarity": "positive",
-        "sentence": "The food was good, the place was clean and affordable.",
-        "term": "food",
-        "to": 8
-    },
-    "TM#3:3_1": {
-        "from": 23,
-        "id": "TM#3:3_1",
-        "polarity": "positive",
-        "sentence": "The food was good, the place was clean and affordable.",
-        "term": "place",
-        "to": 28
-    },
-    "TM#3:4_0": {
-        "from": 75,
-        "id": "TM#3:4_0",
-        "polarity": "positive",
-        "sentence": "I noticed alot of indian people eatting there which is a great sign for an indian place!",
-        "term": "indian place",
-        "to": 87
-    },
-    "TM#4:0_0": {
-        "from": 0,
-        "id": "TM#4:0_0",
-        "polarity": "positive",
-        "sentence": "Indo Chinese food, pretty good...",
-        "term": "Indo Chinese food",
-        "to": 17
-    },
-    "TM#4:1_0": {
-        "from": 17,
-        "id": "TM#4:1_0",
-        "polarity": "neutral",
-        "sentence": "Not a very fancy place but very good Chinese style Indian food.",
-        "term": "place",
-        "to": 22
-    },
-    "TM#4:1_1": {
-        "from": 37,
-        "id": "TM#4:1_1",
-        "polarity": "positive",
-        "sentence": "Not a very fancy place but very good Chinese style Indian food.",
-        "term": "Chinese style Indian food",
-        "to": 62
-    },
-    "TM#4:2_0": {
-        "from": 4,
-        "id": "TM#4:2_0",
-        "polarity": "positive",
-        "sentence": "The chicken lollipop is my favorite, most of the dishes (I have to agree with a previous reviewer) are quite oily and very spicy, espeically the Chilli Chicken.",
-        "term": "chicken lollipop",
-        "to": 20
-    },
     "TM#4:2_1": {
         "from": 49,
         "id": "TM#4:2_1",
@@ -3174,14 +1582,6 @@
         "sentence": "The chicken lollipop is my favorite, most of the dishes (I have to agree with a previous reviewer) are quite oily and very spicy, espeically the Chilli Chicken.",
         "term": "dishes",
         "to": 55
-    },
-    "TM#4:2_2": {
-        "from": 145,
-        "id": "TM#4:2_2",
-        "polarity": "negative",
-        "sentence": "The chicken lollipop is my favorite, most of the dishes (I have to agree with a previous reviewer) are quite oily and very spicy, espeically the Chilli Chicken.",
-        "term": "Chilli Chicken",
-        "to": 159
     },
     "TM#4:3_0": {
         "from": 85,
@@ -3198,46 +1598,6 @@
         "sentence": "For me dishes a little oily, but overall dining experience good.",
         "term": "dishes",
         "to": 13
-    },
-    "TM#5:3_0": {
-        "from": 8,
-        "id": "TM#5:3_0",
-        "polarity": "positive",
-        "sentence": "Helpful service and average price per dish $10.",
-        "term": "service",
-        "to": 15
-    },
-    "TM#5:3_1": {
-        "from": 38,
-        "id": "TM#5:3_1",
-        "polarity": "neutral",
-        "sentence": "Helpful service and average price per dish $10.",
-        "term": "dish",
-        "to": 42
-    },
-    "TM#5:4_0": {
-        "from": 39,
-        "id": "TM#5:4_0",
-        "polarity": "negative",
-        "sentence": "The only thing that strikes you is the decor?(not very pleasant).",
-        "term": "decor",
-        "to": 44
-    },
-    "TM#6:0_0": {
-        "from": 6,
-        "id": "TM#6:0_0",
-        "polarity": "positive",
-        "sentence": "great food",
-        "term": "food",
-        "to": 10
-    },
-    "TM#6:1_0": {
-        "from": 21,
-        "id": "TM#6:1_0",
-        "polarity": "positive",
-        "sentence": "This place has great indian chinese food.",
-        "term": "indian chinese food",
-        "to": 40
     },
     "TM#6:3_0": {
         "from": 33,
@@ -3262,22 +1622,6 @@
         "sentence": "Even though the place is not beautiful, the food speaks for itself.",
         "term": "food",
         "to": 48
-    },
-    "TM#6:6_0": {
-        "from": 5,
-        "id": "TM#6:6_0",
-        "polarity": "positive",
-        "sentence": "Best Indian Chinese in the city, by far!",
-        "term": "Indian Chinese",
-        "to": 19
-    },
-    "TM#7:0_0": {
-        "from": 10,
-        "id": "TM#7:0_0",
-        "polarity": "positive",
-        "sentence": "Excellent food for great prices",
-        "term": "food",
-        "to": 14
     },
     "TM#7:2_0": {
         "from": 4,
@@ -3310,38 +1654,6 @@
         "sentence": "The space is limited so be prepared to wait up to 45 minutes - 1 hour, but be richly rewarded when you savor the delicious indo-chinese food.",
         "term": "indo-chinese food",
         "to": 140
-    },
-    "TR#1:0_0": {
-        "from": 51,
-        "id": "TR#1:0_0",
-        "polarity": "positive",
-        "sentence": "This is one of my favorite spot, very relaxing the food is great all the times , celebrated my engagement and my wedding here , it was very well organized .",
-        "term": "food",
-        "to": 55
-    },
-    "TR#1:1_0": {
-        "from": 4,
-        "id": "TR#1:1_0",
-        "polarity": "positive",
-        "sentence": "The staff is very good.",
-        "term": "staff",
-        "to": 9
-    },
-    "TR#1:2_0": {
-        "from": 11,
-        "id": "TR#1:2_0",
-        "polarity": "positive",
-        "sentence": "Love their drink menu.",
-        "term": "drink menu",
-        "to": 21
-    },
-    "TR#1:3_0": {
-        "from": 34,
-        "id": "TR#1:3_0",
-        "polarity": "positive",
-        "sentence": "I highly recommend this beautiful place.",
-        "term": "place",
-        "to": 39
     },
     "TR#2:1_0": {
         "from": 0,
@@ -3407,14 +1719,6 @@
         "term": "mens bathroom",
         "to": 43
     },
-    "TR#3:0_0": {
-        "from": 6,
-        "id": "TR#3:0_0",
-        "polarity": "positive",
-        "sentence": "Great place to relax and enjoy your dinner",
-        "term": "place",
-        "to": 11
-    },
     "TR#3:1_0": {
         "from": 31,
         "id": "TR#3:1_0",
@@ -3431,22 +1735,6 @@
         "term": "Place",
         "to": 5
     },
-    "TR#3:3_0": {
-        "from": 5,
-        "id": "TR#3:3_0",
-        "polarity": "positive",
-        "sentence": "Good food: my favorite is the seafood spaghetti.",
-        "term": "food",
-        "to": 9
-    },
-    "TR#3:3_1": {
-        "from": 30,
-        "id": "TR#3:3_1",
-        "polarity": "positive",
-        "sentence": "Good food: my favorite is the seafood spaghetti.",
-        "term": "seafood spaghetti",
-        "to": 47
-    },
     "TR#5:0_0": {
         "from": 18,
         "id": "TR#5:0_0",
@@ -3454,46 +1742,6 @@
         "sentence": "Restaurant with a view",
         "term": "view",
         "to": 22
-    },
-    "TR#5:2_0": {
-        "from": 4,
-        "id": "TR#5:2_0",
-        "polarity": "positive",
-        "sentence": "The food tasted very good.",
-        "term": "food",
-        "to": 8
-    },
-    "TR#5:3_0": {
-        "from": 4,
-        "id": "TR#5:3_0",
-        "polarity": "positive",
-        "sentence": "The family seafood entree was very good.",
-        "term": "family seafood entree",
-        "to": 25
-    },
-    "TR#5:4_0": {
-        "from": 4,
-        "id": "TR#5:4_0",
-        "polarity": "positive",
-        "sentence": "The main entree was also very good.",
-        "term": "main entree",
-        "to": 15
-    },
-    "TR#5:6_0": {
-        "from": 22,
-        "id": "TR#5:6_0",
-        "polarity": "negative",
-        "sentence": "Price is high but the food is good, so I would come back again.",
-        "term": "food",
-        "to": 26
-    },
-    "TR#5:6_1": {
-        "from": 22,
-        "id": "TR#5:6_1",
-        "polarity": "positive",
-        "sentence": "Price is high but the food is good, so I would come back again.",
-        "term": "food",
-        "to": 26
     },
     "TR#8:4_0": {
         "from": 58,
@@ -3511,14 +1759,6 @@
         "term": "Food",
         "to": 4
     },
-    "TR#8:6_0": {
-        "from": 5,
-        "id": "TR#8:6_0",
-        "polarity": "positive",
-        "sentence": "Nice view of river and NYC.",
-        "term": "view of river and NYC",
-        "to": 26
-    },
     "TVU#6:2_0": {
         "from": 14,
         "id": "TVU#6:2_0",
@@ -3534,30 +1774,6 @@
         "sentence": "The martinis are amazing and very fairly priced.",
         "term": "martinis",
         "to": 12
-    },
-    "TVU#6:4_0": {
-        "from": 4,
-        "id": "TVU#6:4_0",
-        "polarity": "positive",
-        "sentence": "THE SERVICE IS AMAZING, i've had different waiters and they were all nice, which is a rare thing in NYC.",
-        "term": "SERVICE",
-        "to": 11
-    },
-    "TVU#6:4_1": {
-        "from": 43,
-        "id": "TVU#6:4_1",
-        "polarity": "positive",
-        "sentence": "THE SERVICE IS AMAZING, i've had different waiters and they were all nice, which is a rare thing in NYC.",
-        "term": "waiters",
-        "to": 50
-    },
-    "TVU#6:5_0": {
-        "from": 4,
-        "id": "TVU#6:5_0",
-        "polarity": "positive",
-        "sentence": "The DJ is awesome, I have been there for my birthday and a bunch of other times with friends and I keep going back.",
-        "term": "DJ",
-        "to": 6
     },
     "WE#1:3_0": {
         "from": 4,
@@ -3599,46 +1815,6 @@
         "term": "Water's Edge",
         "to": 47
     },
-    "WE#4:2_0": {
-        "from": 25,
-        "id": "WE#4:2_0",
-        "polarity": "positive",
-        "sentence": "Everyone raved about the atmosphere (elegant rooms and absolutely incomparable views) and the fabulous food!",
-        "term": "atmosphere",
-        "to": 35
-    },
-    "WE#4:2_1": {
-        "from": 45,
-        "id": "WE#4:2_1",
-        "polarity": "positive",
-        "sentence": "Everyone raved about the atmosphere (elegant rooms and absolutely incomparable views) and the fabulous food!",
-        "term": "rooms",
-        "to": 50
-    },
-    "WE#4:2_2": {
-        "from": 79,
-        "id": "WE#4:2_2",
-        "polarity": "positive",
-        "sentence": "Everyone raved about the atmosphere (elegant rooms and absolutely incomparable views) and the fabulous food!",
-        "term": "views",
-        "to": 84
-    },
-    "WE#4:2_3": {
-        "from": 103,
-        "id": "WE#4:2_3",
-        "polarity": "positive",
-        "sentence": "Everyone raved about the atmosphere (elegant rooms and absolutely incomparable views) and the fabulous food!",
-        "term": "food",
-        "to": 107
-    },
-    "WE#4:3_0": {
-        "from": 0,
-        "id": "WE#4:3_0",
-        "polarity": "positive",
-        "sentence": "Service was wonderful;",
-        "term": "Service",
-        "to": 7
-    },
     "WE#4:5_0": {
         "from": 0,
         "id": "WE#4:5_0",
@@ -3654,30 +1830,6 @@
         "sentence": "Thank you everyone at Water's Edge.",
         "term": "Water's Edge",
         "to": 34
-    },
-    "WE#9:3_0": {
-        "from": 4,
-        "id": "WE#9:3_0",
-        "polarity": "positive",
-        "sentence": "The waiter was attentive, the food was delicious and the views of the city were great.",
-        "term": "waiter",
-        "to": 10
-    },
-    "WE#9:3_1": {
-        "from": 30,
-        "id": "WE#9:3_1",
-        "polarity": "positive",
-        "sentence": "The waiter was attentive, the food was delicious and the views of the city were great.",
-        "term": "food",
-        "to": 34
-    },
-    "WE#9:3_2": {
-        "from": 57,
-        "id": "WE#9:3_2",
-        "polarity": "positive",
-        "sentence": "The waiter was attentive, the food was delicious and the views of the city were great.",
-        "term": "views of the city",
-        "to": 74
     },
     "Y#2:1_0": {
         "from": 4,
@@ -3703,14 +1855,6 @@
         "term": "food",
         "to": 20
     },
-    "Y#3:0_0": {
-        "from": 6,
-        "id": "Y#3:0_0",
-        "polarity": "positive",
-        "sentence": "Best. Sushi. Ever.",
-        "term": "Sushi",
-        "to": 11
-    },
     "Y#3:1_0": {
         "from": 42,
         "id": "Y#3:1_0",
@@ -3718,30 +1862,6 @@
         "sentence": "This place has ruined me for neighborhood sushi.",
         "term": "sushi",
         "to": 47
-    },
-    "Y#3:3_0": {
-        "from": 10,
-        "id": "Y#3:3_0",
-        "polarity": "positive",
-        "sentence": "Excellent sashimi, and the millennium roll is beyond delicious.",
-        "term": "sashimi",
-        "to": 17
-    },
-    "Y#3:3_1": {
-        "from": 27,
-        "id": "Y#3:3_1",
-        "polarity": "positive",
-        "sentence": "Excellent sashimi, and the millennium roll is beyond delicious.",
-        "term": "millennium roll",
-        "to": 42
-    },
-    "Y#4:0_0": {
-        "from": 0,
-        "id": "Y#4:0_0",
-        "polarity": "positive",
-        "sentence": "Red Dragon Roll - my favorite thing to eat, of any food group - hands down",
-        "term": "Red Dragon Roll",
-        "to": 15
     },
     "Y#4:1_0": {
         "from": 11,
@@ -3767,22 +1887,6 @@
         "term": "Seafood Dynamite",
         "to": 20
     },
-    "Y#5:0_0": {
-        "from": 11,
-        "id": "Y#5:0_0",
-        "polarity": "negative",
-        "sentence": "overpriced japanese food with mediocre service",
-        "term": "japanese food",
-        "to": 24
-    },
-    "Y#5:0_1": {
-        "from": 39,
-        "id": "Y#5:0_1",
-        "polarity": "neutral",
-        "sentence": "overpriced japanese food with mediocre service",
-        "term": "service",
-        "to": 46
-    },
     "Y#5:2_0": {
         "from": 0,
         "id": "Y#5:2_0",
@@ -3799,14 +1903,6 @@
         "term": "food",
         "to": 4
     },
-    "Y#5:4_0": {
-        "from": 4,
-        "id": "Y#5:4_0",
-        "polarity": "negative",
-        "sentence": "The waitress was not attentive at all.",
-        "term": "waitress",
-        "to": 12
-    },
     "Y#5:5_0": {
         "from": 37,
         "id": "Y#5:5_0",
@@ -3814,62 +1910,6 @@
         "sentence": "I was looking for banana tempura for dessert and they dont have.",
         "term": "dessert",
         "to": 44
-    },
-    "Y#6:0_0": {
-        "from": 9,
-        "id": "Y#6:0_0",
-        "polarity": "positive",
-        "sentence": "Favorite Sushi in NYC",
-        "term": "Sushi",
-        "to": 14
-    },
-    "Y#6:2_0": {
-        "from": 17,
-        "id": "Y#6:2_0",
-        "polarity": "positive",
-        "sentence": "An unpretentious spot in Park Slope, the sushi is consistently good, the service is pleasant, effective and unassuming.",
-        "term": "spot",
-        "to": 21
-    },
-    "Y#6:2_1": {
-        "from": 41,
-        "id": "Y#6:2_1",
-        "polarity": "positive",
-        "sentence": "An unpretentious spot in Park Slope, the sushi is consistently good, the service is pleasant, effective and unassuming.",
-        "term": "sushi",
-        "to": 46
-    },
-    "Y#6:2_2": {
-        "from": 73,
-        "id": "Y#6:2_2",
-        "polarity": "positive",
-        "sentence": "An unpretentious spot in Park Slope, the sushi is consistently good, the service is pleasant, effective and unassuming.",
-        "term": "service",
-        "to": 80
-    },
-    "Y#6:3_0": {
-        "from": 26,
-        "id": "Y#6:3_0",
-        "polarity": "positive",
-        "sentence": "In the summer months, the back garden area is really nice.",
-        "term": "back garden area",
-        "to": 42
-    },
-    "Y#6:4_0": {
-        "from": 4,
-        "id": "Y#6:4_0",
-        "polarity": "positive",
-        "sentence": "The rolls are creative and I have yet to find another sushi place that serves up more inventive yet delicious japanese food.",
-        "term": "rolls",
-        "to": 9
-    },
-    "Y#6:4_1": {
-        "from": 110,
-        "id": "Y#6:4_1",
-        "polarity": "positive",
-        "sentence": "The rolls are creative and I have yet to find another sushi place that serves up more inventive yet delicious japanese food.",
-        "term": "japanese food",
-        "to": 123
     },
     "Y#6:5_0": {
         "from": 4,
@@ -3879,30 +1919,6 @@
         "term": "Dancing, White River and Millenium rolls",
         "to": 44
     },
-    "Y#7:0_0": {
-        "from": 16,
-        "id": "Y#7:0_0",
-        "polarity": "positive",
-        "sentence": "Reliable, Fresh Sushi",
-        "term": "Sushi",
-        "to": 21
-    },
-    "Y#7:2_0": {
-        "from": 4,
-        "id": "Y#7:2_0",
-        "polarity": "positive",
-        "sentence": "The sashimi is always fresh and the rolls are innovative and delicious.",
-        "term": "sashimi",
-        "to": 11
-    },
-    "Y#7:2_1": {
-        "from": 36,
-        "id": "Y#7:2_1",
-        "polarity": "positive",
-        "sentence": "The sashimi is always fresh and the rolls are innovative and delicious.",
-        "term": "rolls",
-        "to": 41
-    },
     "Y#7:3_0": {
         "from": 30,
         "id": "Y#7:3_0",
@@ -3911,14 +1927,6 @@
         "term": "service",
         "to": 37
     },
-    "Y#7:4_0": {
-        "from": 0,
-        "id": "Y#7:4_0",
-        "polarity": "negative",
-        "sentence": "Delivery can be spot on or lacking depending on the weather and the day of the week.",
-        "term": "Delivery",
-        "to": 8
-    },
     "Y#7:5_0": {
         "from": 0,
         "id": "Y#7:5_0",
@@ -3926,38 +1934,6 @@
         "sentence": "Delivery guy sometimes get upset if you don't tip more than 10%.",
         "term": "Delivery guy",
         "to": 12
-    },
-    "Y#9:0_0": {
-        "from": 14,
-        "id": "Y#9:0_0",
-        "polarity": "positive",
-        "sentence": "Good creative rolls!",
-        "term": "rolls",
-        "to": 19
-    },
-    "Y#9:1_0": {
-        "from": 0,
-        "id": "Y#9:1_0",
-        "polarity": "positive",
-        "sentence": "Yamato is an excellent place to go if youre not into sashimi, or if you have friends who doesnt like sushi much.",
-        "term": "Yamato",
-        "to": 6
-    },
-    "Y#9:2_0": {
-        "from": 16,
-        "id": "Y#9:2_0",
-        "polarity": "positive",
-        "sentence": "They have great rolls, the triple color and norwegetan rolls, are awesome and filling.",
-        "term": "rolls",
-        "to": 21
-    },
-    "Y#9:2_1": {
-        "from": 27,
-        "id": "Y#9:2_1",
-        "polarity": "positive",
-        "sentence": "They have great rolls, the triple color and norwegetan rolls, are awesome and filling.",
-        "term": "triple color and norwegetan rolls",
-        "to": 60
     },
     "Y#9:3_0": {
         "from": 4,
@@ -3983,62 +1959,6 @@
         "term": "dessert",
         "to": 89
     },
-    "Y#9:4_0": {
-        "from": 22,
-        "id": "Y#9:4_0",
-        "polarity": "positive",
-        "sentence": "They have a delicious banana chocolate dessert, as well as a great green tea tempura.",
-        "term": "banana chocolate dessert",
-        "to": 46
-    },
-    "Y#9:4_1": {
-        "from": 67,
-        "id": "Y#9:4_1",
-        "polarity": "positive",
-        "sentence": "They have a delicious banana chocolate dessert, as well as a great green tea tempura.",
-        "term": "green tea tempura",
-        "to": 84
-    },
-    "Y#9:5_0": {
-        "from": 4,
-        "id": "Y#9:5_0",
-        "polarity": "positive",
-        "sentence": "The appetizers are also delicious!",
-        "term": "appetizers",
-        "to": 14
-    },
-    "Z#10:0_0": {
-        "from": 5,
-        "id": "Z#10:0_0",
-        "polarity": "positive",
-        "sentence": "Good Food",
-        "term": "Food",
-        "to": 9
-    },
-    "Z#10:2_0": {
-        "from": 4,
-        "id": "Z#10:2_0",
-        "polarity": "positive",
-        "sentence": "The food was great and tasty, but the sitting space was too small, I don't like being cramp in a corner.",
-        "term": "food",
-        "to": 8
-    },
-    "Z#10:2_1": {
-        "from": 38,
-        "id": "Z#10:2_1",
-        "polarity": "negative",
-        "sentence": "The food was great and tasty, but the sitting space was too small, I don't like being cramp in a corner.",
-        "term": "sitting space",
-        "to": 51
-    },
-    "Z#10:3_0": {
-        "from": 37,
-        "id": "Z#10:3_0",
-        "polarity": "positive",
-        "sentence": "Over all it was a very nice romantic place .",
-        "term": "place",
-        "to": 42
-    },
     "Z#11:4_0": {
         "from": 12,
         "id": "Z#11:4_0",
@@ -4055,22 +1975,6 @@
         "term": "food",
         "to": 8
     },
-    "Z#11:6_0": {
-        "from": 24,
-        "id": "Z#11:6_0",
-        "polarity": "positive",
-        "sentence": "I've enjoyed 99% of the dishes we've ordered with the only exceptions being the occasional too-authentic-for-me dish (I'm a daring eater but not THAT daring).",
-        "term": "dishes",
-        "to": 30
-    },
-    "Z#11:6_1": {
-        "from": 112,
-        "id": "Z#11:6_1",
-        "polarity": "negative",
-        "sentence": "I've enjoyed 99% of the dishes we've ordered with the only exceptions being the occasional too-authentic-for-me dish (I'm a daring eater but not THAT daring).",
-        "term": "dish",
-        "to": 116
-    },
     "Z#2:0_0": {
         "from": 0,
         "id": "Z#2:0_0",
@@ -4079,22 +1983,6 @@
         "term": "Sushi",
         "to": 5
     },
-    "Z#3:0_0": {
-        "from": 10,
-        "id": "Z#3:0_0",
-        "polarity": "positive",
-        "sentence": "Excellent food, although the interior could use some help.",
-        "term": "food",
-        "to": 14
-    },
-    "Z#3:0_1": {
-        "from": 29,
-        "id": "Z#3:0_1",
-        "polarity": "negative",
-        "sentence": "Excellent food, although the interior could use some help.",
-        "term": "interior",
-        "to": 37
-    },
     "Z#3:1_0": {
         "from": 4,
         "id": "Z#3:1_0",
@@ -4102,22 +1990,6 @@
         "sentence": "The space kind of feels like an Alice in Wonderland setting, without it trying to be that.",
         "term": "space",
         "to": 9
-    },
-    "Z#3:2_0": {
-        "from": 33,
-        "id": "Z#3:2_0",
-        "polarity": "positive",
-        "sentence": "I paid just about $60 for a good meal, though :)",
-        "term": "meal",
-        "to": 37
-    },
-    "Z#3:3_0": {
-        "from": 6,
-        "id": "Z#3:3_0",
-        "polarity": "positive",
-        "sentence": "Great sake!",
-        "term": "sake",
-        "to": 10
     },
     "Z#5:0_0": {
         "from": 8,
@@ -4134,14 +2006,6 @@
         "sentence": "Mazing interior.",
         "term": "interior",
         "to": 15
-    },
-    "Z#5:2_0": {
-        "from": 6,
-        "id": "Z#5:2_0",
-        "polarity": "positive",
-        "sentence": "Great food!",
-        "term": "food",
-        "to": 10
     },
     "Z#5:3_0": {
         "from": 26,
@@ -4207,30 +2071,6 @@
         "term": "sake\u2019s",
         "to": 10
     },
-    "Z#6:12_0": {
-        "from": 27,
-        "id": "Z#6:12_0",
-        "polarity": "neutral",
-        "sentence": "For desserts, we tried the frozen black sesame mousse (interesting but not extraordinary) and matcha (powdered green tea) and blueberry cheesecake, which was phenomenal.",
-        "term": "frozen black sesame mousse",
-        "to": 53
-    },
-    "Z#6:12_1": {
-        "from": 94,
-        "id": "Z#6:12_1",
-        "polarity": "positive",
-        "sentence": "For desserts, we tried the frozen black sesame mousse (interesting but not extraordinary) and matcha (powdered green tea) and blueberry cheesecake, which was phenomenal.",
-        "term": "matcha (powdered green tea) and blueberry cheesecake",
-        "to": 146
-    },
-    "Z#6:13_0": {
-        "from": 191,
-        "id": "Z#6:13_0",
-        "polarity": "positive",
-        "sentence": "Maybe it was the great company (I had friends visiting from Philly \u2013 yes, it was not a date this time) or the super reasonable price point, but I just can\u2019t say enough good things about this brasserie.",
-        "term": "brasserie",
-        "to": 200
-    },
     "Z#6:14_0": {
         "from": 95,
         "id": "Z#6:14_0",
@@ -4238,14 +2078,6 @@
         "sentence": "I don\u2019t usually visit the same establishment more than once, what more twice, but I\u2019ll come to Zenkichi anytime for a quiet, unhurried and memorable dinner.",
         "term": "Zenkichi",
         "to": 103
-    },
-    "Z#6:1_0": {
-        "from": 32,
-        "id": "Z#6:1_0",
-        "polarity": "positive",
-        "sentence": "This is undoubtedly my favorite modern Japanese brasserie (that don\u2019t serve sushi), and in my opinion, one of the most romantic restaurants in the city!",
-        "term": "modern Japanese brasserie",
-        "to": 57
     },
     "Z#6:2_0": {
         "from": 60,
@@ -4286,22 +2118,6 @@
         "sentence": "If you\u2019re planning to come here, make sure that your date is someone whom you really like since you\u2019ll be ushered to private booths where there will be no people or food watching (choose the ones on the ground level that have glass ceilings so you may see the stars in the sky!).",
         "term": "glass ceilings",
         "to": 240
-    },
-    "Z#6:4_0": {
-        "from": 74,
-        "id": "Z#6:4_0",
-        "polarity": "positive",
-        "sentence": "It\u2019s just you and your date and an occasional cute \u2018excuse me\u2019 before the waiter opens the little curtain to your booth!",
-        "term": "waiter",
-        "to": 80
-    },
-    "Z#6:5_0": {
-        "from": 17,
-        "id": "Z#6:5_0",
-        "polarity": "positive",
-        "sentence": "My party had the BBE $29 fixe prix menu, which was such a wonderful deal since it also came with a flight of sake!",
-        "term": "BBE $29 fixe prix menu",
-        "to": 39
     },
     "Z#6:7_0": {
         "from": 33,
@@ -4383,14 +2199,6 @@
         "term": "food",
         "to": 8
     },
-    "Z#9:0_0": {
-        "from": 18,
-        "id": "Z#9:0_0",
-        "polarity": "positive",
-        "sentence": "short and sweet \u2013 seating is great:it's romantic,cozy and private.",
-        "term": "seating",
-        "to": 25
-    },
     "Z#9:1_0": {
         "from": 4,
         "id": "Z#9:1_0",
@@ -4399,14 +2207,6 @@
         "term": "boths",
         "to": 9
     },
-    "Z#9:2_0": {
-        "from": 4,
-        "id": "Z#9:2_0",
-        "polarity": "positive",
-        "sentence": "The service was extremely fast and attentive(thanks to the service button on your table) but I barely understood 1 word when the waiter took our order.",
-        "term": "service",
-        "to": 11
-    },
     "Z#9:2_1": {
         "from": 59,
         "id": "Z#9:2_1",
@@ -4414,14 +2214,6 @@
         "sentence": "The service was extremely fast and attentive(thanks to the service button on your table) but I barely understood 1 word when the waiter took our order.",
         "term": "service button",
         "to": 73
-    },
-    "Z#9:2_2": {
-        "from": 129,
-        "id": "Z#9:2_2",
-        "polarity": "negative",
-        "sentence": "The service was extremely fast and attentive(thanks to the service button on your table) but I barely understood 1 word when the waiter took our order.",
-        "term": "waiter",
-        "to": 135
     },
     "Z#9:3_0": {
         "from": 4,

@@ -256,12 +256,16 @@ def get_features(input_text, BERT_MODEL):
         BERT_PRETRAINED_DIR = 'external/uncased_L-2_H-128_A-2'
         LAYERS = [-1, -2]
         dim = 128
+    if BERT_MODEL == 'Base': 
+        BERT_PRETRAINED_DIR = 'external/uncased_L-12_H-768_A-12'
+        LAYERS = [-1, -2, -3, -4]
+        dim = 768
     if BERT_MODEL == 'Large': 
         BERT_PRETRAINED_DIR = 'external/uncased_L-24_H-1024_A-16'
         LAYERS = [-1, -2, -3, -4]
         dim = 1024
 
-    MAX_SEQ_LENGTH = 384
+    MAX_SEQ_LENGTH = FLAGS.max_sentence_len
     BERT_CONFIG = BERT_PRETRAINED_DIR + '/bert_config.json'
     VOCAB_FILE = BERT_PRETRAINED_DIR + '/vocab.txt'
     INIT_CHECKPOINT = BERT_PRETRAINED_DIR + '/bert_model.ckpt'
@@ -361,7 +365,19 @@ def loadFile(file, data):
 def loadFiles(train, test):
     data = []
     data = loadFile(train, data)
+    train_length = len(data)
     data = loadFile(test, data)
+
+    with open('data/temporaryData/temp_BERT_Tiny/raw.txt', 'w') as file:
+        for line in data:
+            file.write(line + '\n')
+    with open('data/ont_'+ str(FLAGS.embedding_type) +str(FLAGS.embedding_dim)+'traindata'+str(FLAGS.year)+'.txt','w') as file:
+        for j in range(0, train_length):
+            file.write(data[j] + '\n')
+    with open('data/ont_'+ str(FLAGS.embedding_type) +str(FLAGS.embedding_dim)+'testdata'+str(FLAGS.year)+'.txt','w') as file:
+        for k in range(train_length, len(data)):
+            file.write(data[k] + '\n')
+
     return data
 
 def print_progress_bar(start_time, iteration, total, bar_length=25):
@@ -372,10 +388,10 @@ def print_progress_bar(start_time, iteration, total, bar_length=25):
     elapsed_time = time.time() - start_time
     avg_time_per_iteration = elapsed_time / max(iteration, 1)
     estimated_time_remaining = avg_time_per_iteration * (total - iteration)
-    eta = time.gmtime(time.time() + estimated_time_remaining + 7200)
+    eta = time.gmtime(time.time() + estimated_time_remaining + 3600)
 
     sys.stdout.write(
-        f'\r{time.asctime(time.gmtime(start_time+7200))} --- '
+        f'\r{time.asctime(time.gmtime(start_time+3600))} --- '
         f'[{arrow}{spaces}] '
         f'{int(progress * 100)}% '
         f'({iteration}/{total}) '
@@ -407,7 +423,7 @@ def data_wot(data):
                 f.write('\n%s' % key[1])
 
 def getBERT(data):
-    BERT_MODEL = "Large"
+    BERT_MODEL = "Base"
 
     folder = 'data/temporaryData/temp_BERT_' + BERT_MODEL
     for filename in os.listdir(folder):
@@ -442,29 +458,19 @@ def getBERT(data):
                 for v in value:
                     f.write('%s ' % v)
 
-# train = 'data/ARTSData/{}train.json' .format(FLAGS.year) # 1210/1772
-# test = 'data/ARTSData/{}test.json' .format(FLAGS.year)
+train = 'data/ARTSData/{}train.json' .format(FLAGS.year) # 1210/3938 --> 2015 || 1772/5646 --> 2016
+test = 'data/ARTSData/{}test.json' .format(FLAGS.year)
 
 # train = 'data/ARTSData/{}train.json' .format(FLAGS.year)
-# test = 'data/ARTSData/ARTS{}test.json' .format(FLAGS.year)
+# test = 'data/ARTSData/ontARTS{}test.json' .format(FLAGS.year)
 
-# train = 'data/ARTSData/ARTS{}train.json' .format(FLAGS.year) # 3939/5647
-# test = 'data/ARTSData/ARTS{}test.json' .format(FLAGS.year)
+# train = 'data/ARTSData/ARTS{}train.json' .format(FLAGS.year)
+# test = 'data/ARTSData/ontARTS{}test.json' .format(FLAGS.year)
 
-train = 'data/ARTSData/ARTS{}train.json' .format(FLAGS.year)
-test = 'data/ARTSData/{}test.json' .format(FLAGS.year)
+# train = 'data/ARTSData/ARTS{}train.json' .format(FLAGS.year)
+# test = 'data/ARTSData/ont{}test.json' .format(FLAGS.year)
 
 data = loadFiles(train, test)
 
-with open('data/temporaryData/temp_BERT_Tiny/raw.txt', 'w') as file:
-    for line in data:
-        file.write(line + '\n')
-with open('data/ont_'+ str(FLAGS.embedding_type) +str(FLAGS.embedding_dim)+'traindata'+str(FLAGS.year)+'.txt','w') as file:
-    for j in range(0, 5647*3):
-        file.write(data[j] + '\n')
-with open('data/ont_'+ str(FLAGS.embedding_type) +str(FLAGS.embedding_dim)+'testdata'+str(FLAGS.year)+'.txt','w') as file:
-    for k in range(5647*3,len(data)):
-        file.write(data[k] + '\n')
-
-data_wot(data)
-getBERT(data)
+# data_wot(data)
+# getBERT(data)

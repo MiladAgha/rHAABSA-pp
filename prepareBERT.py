@@ -4,7 +4,7 @@ First 'getBERTusingColab' should be used to compile the subfiles containing embe
 The new test-/traindata files contain original data, with every word unique and corresponding to vector in emb_matrix
 '''
 from config import *
-BERT_MODEL = 'Large'
+BERT_MODEL = 'Base'
 # When BERT instead of BERT_Large, change filenames. Not possible with flags, as "xtilly" differs
 # <editor-fold desc="Combining embedding files, retrieved with 'getBERTusingColab">
 temp_filenames = ['data/temporaryData/temp_BERT_'+BERT_MODEL+'/part1.txt',
@@ -12,24 +12,24 @@ temp_filenames = ['data/temporaryData/temp_BERT_'+BERT_MODEL+'/part1.txt',
                   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part3.txt',
                   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part4.txt',
                   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part5.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part6.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part7.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part8.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part9.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part10.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part11.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part12.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part13.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part14.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part15.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part16.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part17.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part18.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part19.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part20.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part21.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part22.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part23.txt']
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part6.txt']
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part7.txt',
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part8.txt',
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part9.txt',
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part10.txt',
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part11.txt',
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part12.txt',
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part13.txt',
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part14.txt',
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part15.txt',
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part16.txt',
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part17.txt',
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part18.txt',
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part19.txt',
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part20.txt',
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part21.txt',
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part22.txt',
+                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part23.txt']
 
 with open('data/temporaryData/temp_BERT_'+BERT_MODEL+'/BERT_'+BERT_MODEL+'embedding.txt','w') as outf:
     for tfname in temp_filenames:
@@ -164,8 +164,8 @@ with open('data/temporaryData/temp_BERT_'+BERT_MODEL+'/unique_BERT_Data_All.txt'
 linesAllData = open('data/temporaryData/temp_BERT_'+BERT_MODEL+'/unique_BERT_Data_All.txt').readlines()
 with open('data/'+ str(FLAGS.embedding_type) +str(FLAGS.embedding_dim)+'traindata'+str(FLAGS.year)+'.txt','w') as outTrain, \
         open('data/'+ str(FLAGS.embedding_type) +str(FLAGS.embedding_dim)+'testdata'+str(FLAGS.year)+'.txt','w') as outTest:
-    for j in range(0, 5647*3):
+    for j in range(0, 1772*3):
         outTrain.write(linesAllData[j])
-    for k in range(5647*3,len(linesAllData)):
+    for k in range(1772*3, len(linesAllData)):
         outTest.write(linesAllData[k])
 # </editor-fold>
