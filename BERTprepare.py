@@ -12,16 +12,16 @@ temp_filenames = ['data/temporaryData/temp_BERT_'+BERT_MODEL+'/part1.txt',
                   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part3.txt',
                   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part4.txt',
                   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part5.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part6.txt']
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part7.txt',
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part8.txt',
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part9.txt',
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part10.txt',
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part11.txt',
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part12.txt',
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part13.txt',
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part14.txt',
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part15.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part6.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part7.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part8.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part9.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part10.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part11.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part12.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part13.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part14.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part15.txt']
                 #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part16.txt',
                 #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part17.txt',
                 #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part18.txt',
@@ -74,7 +74,7 @@ with open('data/temporaryData/temp_BERT_'+BERT_MODEL+'/BERT_'+BERT_MODEL+'embedd
 # <editor-fold desc="make embedding matrix with unique words, prints counter">
 uniqueVocaBERT=[]
 with open('data/temporaryData/temp_BERT_'+BERT_MODEL+'/BERT_'+BERT_MODEL+'embedding.txt') as BERTemb:
-    with open('data/'+ str(FLAGS.embedding_type) + str(FLAGS.embedding_dim)+'embedding'+str(FLAGS.year)+'.txt','w') as outfile:
+    with open('data/'+str(FLAGS.year)+str(FLAGS.embedding_type)+'_emb.txt','w') as outfile:
         for line in BERTemb:
             word =  line.split(" ")[0]
             weights = line.split(" ")[1:]
@@ -162,10 +162,10 @@ with open('data/temporaryData/temp_BERT_'+BERT_MODEL+'/unique_BERT_Data_All.txt'
 
 # <editor-fold desc="Split in train and test file">
 linesAllData = open('data/temporaryData/temp_BERT_'+BERT_MODEL+'/unique_BERT_Data_All.txt').readlines()
-with open('data/'+ str(FLAGS.embedding_type) +str(FLAGS.embedding_dim)+'traindata'+str(FLAGS.year)+'.txt','w') as outTrain, \
-        open('data/'+ str(FLAGS.embedding_type) +str(FLAGS.embedding_dim)+'testdata'+str(FLAGS.year)+'.txt','w') as outTest:
-    for j in range(0, 1772*3):
+with open('data/'+str(FLAGS.year)+'train'+str(FLAGS.embedding_type)+'.txt','w') as outTrain, \
+        open('data/'+str(FLAGS.year)+'test'+str(FLAGS.embedding_type)+'.txt','w') as outTest:
+    for j in range(0, 3938*3):
         outTrain.write(linesAllData[j])
-    for k in range(1772*3, len(linesAllData)):
+    for k in range(3938*3, len(linesAllData)):
         outTest.write(linesAllData[k])
 # </editor-fold>

@@ -117,7 +117,8 @@ def plot_distribution_aspects_per_sentence_full():
 
 # plot_rf_sentence_labels()
 # plot_distribution_aspects_per_sentence_full()
-    
+
+# 2014, testsize: , remainingsize: , acc_ont:     
 # 2015, testsize: 559, remainingsize: 283, acc_ont: 0.8007
 # 2016, testsize: 623, remainingsize: 239, acc_ont: 0.8620    
 

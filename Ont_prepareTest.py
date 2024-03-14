@@ -2,7 +2,7 @@ import json
 
 def extract_ont(ix, year):
 
-        input_file = 'data/ARTSData/{}test.json' .format(year)
+        input_file  = 'data/ARTSData/{}test.json' .format(year)
         output_file = 'data/ARTSData/ont{}test.json' .format(year)
         output_keys = 'data/ARTSData/ont{}.json' .format(year)
 
