@@ -35,7 +35,10 @@ def parse_SemEval(version, fn):
             multi = False
         if (sent_opin_cnt[0] == len(opins)) or (sent_opin_cnt[1] == len(opins)) or (sent_opin_cnt[2] == len(opins)):
             contra = False
-        for ix, opin in enumerate(opins):
+        opins_list = list(opins)
+        opins_list.sort(key=lambda x: x[3])
+        opins_list.sort(key=lambda x: x[1])
+        for ix, opin in enumerate(opins_list):
             opin_cnt[polar_idx[opin[3]]] += 1
             corpus.append({"id": sent.attrib['id']+"_"+str(ix), "sentence": sent.find('text').text, "term": opin[0], "from": opin[1], "to": opin[2], "polarity": opin[3], "multi": multi, "contra": contra})
     return corpus

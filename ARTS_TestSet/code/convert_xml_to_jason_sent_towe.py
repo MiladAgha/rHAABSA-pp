@@ -133,7 +133,10 @@ def parse_SemEval(version, fn, corpus_opinions):
             multi = False
         if (sent_opin_cnt[0] == len(opins)) or (sent_opin_cnt[1] == len(opins)) or (sent_opin_cnt[2] == len(opins)):
             contra = False
-        for ix, opin in enumerate(opins):
+        opins_list = list(opins)
+        opins_list.sort(key=lambda x: x[3])
+        opins_list.sort(key=lambda x: x[1])
+        for ix, opin in enumerate(opins_list):
             opin_cnt[polar_idx[opin[3]]] += 1
             if sent.attrib['id']+opin[0] in corpus_opinions:
 
@@ -161,10 +164,10 @@ def convert_xml_to_jason_sent_towe(version, dataset):
 
     train_corpus=parse_SemEval(version, "data/semval/{}/train.xml" .format(dataset), load_text_target_label("data/towe/{}/train.tsv" .format(dataset)))
     with open("data/generated/{}/train_sent_towe.json" .format(dataset), "w") as fw:
-        json.dump({rec["id"]: rec for rec in train_corpus }, fw, sort_keys=False, indent=4)
+        json.dump({rec["id"]: rec for rec in train_corpus }, fw, sort_keys=True, indent=4)
     test_corpus=parse_SemEval(version, "data/semval/{}/test.xml" .format(dataset), load_text_target_label("data/towe/{}/test.tsv" .format(dataset)))
     with open("data/generated/{}/test_sent_towe.json" .format(dataset), "w") as fw:
-        json.dump({rec["id"]: rec for rec in test_corpus}, fw, sort_keys=False, indent=4)
+        json.dump({rec["id"]: rec for rec in test_corpus}, fw, sort_keys=True, indent=4)
     
     return
 

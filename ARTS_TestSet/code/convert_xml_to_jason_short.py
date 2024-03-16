@@ -29,7 +29,10 @@ def parse_SemEval(version, fn):
                 if opin.attrib['polarity'] in polar_idx:
                     opins.add((opin.attrib[SemEval[1]], int(opin.attrib['from']), int(opin.attrib['to']), opin.attrib['polarity'] ) )  
                     sent_opin_cnt[polar_idx[opin.attrib['polarity']]] += 1
-        for ix, opin in enumerate(opins):
+        opins_list = list(opins)
+        opins_list.sort(key=lambda x: x[3])
+        opins_list.sort(key=lambda x: x[1])
+        for ix, opin in enumerate(opins_list):
             opin_cnt[polar_idx[opin[3]]] += 1
             corpus.append({"id": sent.attrib['id']+"_"+str(ix), "sentence": sent.find('text').text, "term": opin[0], "from": opin[1], "to": opin[2], "polarity": opin[3]})
     return corpus
@@ -38,10 +41,10 @@ def convert_xml_to_jason(version, dataset):
 
     train_corpus=parse_SemEval(version, "data/semval/{}/train.xml" .format(dataset))
     with open("data/generated/{}/train.json" .format(dataset), "w") as fw:
-        json.dump({rec["id"]: rec for rec in train_corpus }, fw, sort_keys=False, indent=4)
+        json.dump({rec["id"]: rec for rec in train_corpus }, fw, sort_keys=True, indent=4)
     test_corpus=parse_SemEval(version, "data/semval/{}/test.xml" .format(dataset))
     with open("data/generated/{}/test.json" .format(dataset), "w") as fw:
-        json.dump({rec["id"]: rec for rec in test_corpus}, fw, sort_keys=False, indent=4)
+        json.dump({rec["id"]: rec for rec in test_corpus}, fw, sort_keys=True, indent=4)
     
     return
 
