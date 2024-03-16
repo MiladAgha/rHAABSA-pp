@@ -466,5 +466,5 @@ test = 'data/ARTSData/ARTS{}test.json' .format(FLAGS.year)
 
 data = loadFiles(train, test)
                     
-data_wot(data)
+# data_wot(data)
 getBERT(data)

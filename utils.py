@@ -1,15 +1,25 @@
-#!/usr/bin/env python
-# encoding: utf-8
-
 import numpy as np
 
-def batch_index(length, batch_size, n_iter=100, is_shuffle=True):
-    index = list(range(length))
-    for j in range(n_iter):
-        if is_shuffle:
-            np.random.shuffle(index)
-        for i in range(int(length / batch_size) + (1 if length % batch_size else 0)):
-            yield index[i * batch_size:(i + 1) * batch_size]
+def load_w2v(w2v_file, embedding_dim, is_skip=False):
+    fp = open(w2v_file)
+    if is_skip:
+        fp.readline()
+    w2v = []
+    word_dict = dict()
+    w2v.append([0.] * embedding_dim)
+    cnt = 0
+    for line in fp:
+        cnt += 1
+        line = line.split()
+        if len(line) != embedding_dim + 1:
+            print('a bad word embedding: {}'.format(line[0]))
+            continue
+        w2v.append([float(v) for v in line[1:]])
+        word_dict[line[0]] = cnt
+    w2v = np.asarray(w2v, dtype=np.float32)
+    w2v = np.row_stack((w2v, np.sum(w2v, axis=0) / cnt))
+    word_dict['$t$'] = (cnt + 1)
+    return word_dict, w2v
 
 def load_word_id_mapping(word_id_file, encoding='utf8'):
     """
@@ -21,44 +31,16 @@ def load_word_id_mapping(word_id_file, encoding='utf8'):
     for line in open(word_id_file):
         line = line.decode(encoding, 'ignore').lower().split()
         word_to_id[line[0]] = int(line[1])
-    print('\nload word-id mapping done!\n')
+    # print('\nload word-id mapping done!\n')
     return word_to_id
-
-
-def load_w2v(w2v_file, embedding_dim, is_skip=False):
-    fp = open(w2v_file)
-    if is_skip:
-        fp.readline()
-    w2v = []
-    word_dict = dict()
-    # [0,0,...,0] represent absent words
-    w2v.append([0.] * embedding_dim)
-    cnt = 0
-    for line in fp:
-        cnt += 1
-        line = line.split()
-        # line = line.split()
-        if len(line) != embedding_dim + 1:
-            print('a bad word embedding: {}'.format(line[0]))
-            continue
-        w2v.append([float(v) for v in line[1:]])
-        word_dict[line[0]] = cnt
-    w2v = np.asarray(w2v, dtype=np.float32)
-    w2v = np.row_stack((w2v, np.sum(w2v, axis=0) / cnt))
-    print(np.shape(w2v))
-    word_dict['$t$'] = (cnt + 1)
-    # w2v -= np.mean(w2v, axis=0)
-    # w2v /= np.std(w2v, axis=0)
-    print(word_dict['$t$'], len(w2v))
-    return word_dict, w2v
 
 def change_y_to_onehot(y):
     from collections import Counter
-    print(Counter(y))
+    # print(Counter(y))
     class_set = set(y)
     n_class = len(class_set)
     y_onehot_mapping = dict(zip(class_set, range(n_class)))
-    print(y_onehot_mapping)
+    # print(y_onehot_mapping)
     onehot = []
     for label in y:
         tmp = [0] * n_class
@@ -66,13 +48,12 @@ def change_y_to_onehot(y):
         onehot.append(tmp)
     return np.asarray(onehot, dtype=np.int32)
 
-
 def load_inputs_twitter(input_file, word_id_file, sentence_len, type_='', is_r=True, target_len=10, encoding='utf8'):
     if type(word_id_file) is str:
         word_to_id = load_word_id_mapping(word_id_file)
     else:
         word_to_id = word_id_file
-    print('load word-to-id done!')
+    # print('load word-to-id done!')
 
     x, y, sen_len = [], [], []
     x_r, sen_len_r = [], []
@@ -134,13 +115,13 @@ def load_inputs_twitter(input_file, word_id_file, sentence_len, type_='', is_r=T
     all_y = y;
     y = change_y_to_onehot(y)
     if type_ == 'TD':
-        return np.asarray(x), np.asarray(sen_len), np.asarray(x_r), \
-               np.asarray(sen_len_r), np.asarray(y)
+        return np.asarray(x, dtype="object"), np.asarray(sen_len, dtype="object"), np.asarray(x_r, dtype="object"), \
+               np.asarray(sen_len_r, dtype="object"), np.asarray(y, dtype="object")
     elif type_ == 'TC':
-        return np.asarray(x), np.asarray(sen_len), np.asarray(x_r), np.asarray(sen_len_r), \
-               np.asarray(y), np.asarray(target_words), np.asarray(tar_len), np.asarray(all_sent), np.asarray(all_target), np.asarray(all_y)
+        return np.asarray(x, dtype="object"), np.asarray(sen_len, dtype="object"), np.asarray(x_r, dtype="object"), np.asarray(sen_len_r, dtype="object"), \
+               np.asarray(y, dtype="object"), np.asarray(target_words, dtype="object"), np.asarray(tar_len, dtype="object"), np.asarray(all_sent, dtype="object"), np.asarray(all_target, dtype="object"), np.asarray(all_y, dtype="object")
     elif type_ == 'IAN':
-        return np.asarray(x), np.asarray(sen_len), np.asarray(target_words), \
-               np.asarray(tar_len), np.asarray(y)
+        return np.asarray(x, dtype="object"), np.asarray(sen_len, dtype="object"), np.asarray(target_words, dtype="object"), \
+               np.asarray(tar_len, dtype="object"), np.asarray(y, dtype="object")
     else:
-        return np.asarray(x), np.asarray(sen_len), np.asarray(y)
+        return np.asarray(x, dtype="object"), np.asarray(sen_len, dtype="object"), np.asarray(y, dtype="object")

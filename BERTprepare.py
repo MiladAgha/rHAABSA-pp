@@ -21,15 +21,29 @@ temp_filenames = ['data/temporaryData/temp_BERT_'+BERT_MODEL+'/part1.txt',
                   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part12.txt',
                   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part13.txt',
                   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part14.txt',
-                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part15.txt']
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part16.txt',
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part17.txt',
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part18.txt',
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part19.txt',
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part20.txt',
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part21.txt',
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part22.txt',
-                #   'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part23.txt']
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part15.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part16.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part17.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part18.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part19.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part20.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part21.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part22.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part23.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part24.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part25.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part26.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part27.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part28.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part29.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part30.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part31.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part32.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part33.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part34.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part35.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part36.txt',
+                  'data/temporaryData/temp_BERT_'+BERT_MODEL+'/part37.txt']
 
 with open('data/temporaryData/temp_BERT_'+BERT_MODEL+'/BERT_'+BERT_MODEL+'embedding.txt','w') as outf:
     for tfname in temp_filenames:
@@ -164,8 +178,8 @@ with open('data/temporaryData/temp_BERT_'+BERT_MODEL+'/unique_BERT_Data_All.txt'
 linesAllData = open('data/temporaryData/temp_BERT_'+BERT_MODEL+'/unique_BERT_Data_All.txt').readlines()
 with open('data/'+str(FLAGS.year)+'train'+str(FLAGS.embedding_type)+'.txt','w') as outTrain, \
         open('data/'+str(FLAGS.year)+'test'+str(FLAGS.embedding_type)+'.txt','w') as outTest:
-    for j in range(0, 3938*3):
+    for j in range(0, 11000*3):
         outTrain.write(linesAllData[j])
-    for k in range(3938*3, len(linesAllData)):
+    for k in range(11000*3, len(linesAllData)):
         outTest.write(linesAllData[k])
 # </editor-fold>
