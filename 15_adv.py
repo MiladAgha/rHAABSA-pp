@@ -6,7 +6,7 @@ from keras.activations import tanh, softmax
 
 #-------------------------------------------------------------------------------------------------
 
-embedding_type = 'BERT'
+embedding_type = 'BERT_adv'
 year = 2015
 embedding_dim = 768
 
