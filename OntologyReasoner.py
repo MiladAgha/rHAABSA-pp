@@ -10,6 +10,7 @@ import os
 from nltk.parse.stanford import StanfordDependencyParser
 from nltk import *
 from config import *
+from utils import extract_ont
 
 #path to the java runtime environment
 nltk.internals.config_java('/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java')
@@ -353,7 +354,8 @@ class OntReasoner():
 
         # Save the outputs to .txt file
         if use_backup == True:
-            print(self.remaining_pos_vector)
+            # print(self.remaining_pos_vector)
+            extract_ont(self.remaining_pos_vector, FLAGS.year)
             outF= open(FLAGS.remaining_test_path, "w")
             with open(FLAGS.test_path, "r") as fd:
                 for i, line in enumerate(fd):

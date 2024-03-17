@@ -1,4 +1,5 @@
 import numpy as np
+import json
 
 def load_w2v(w2v_file, embedding_dim, is_skip=False):
     fp = open(w2v_file)
@@ -125,3 +126,21 @@ def load_inputs_twitter(input_file, word_id_file, sentence_len, type_='', is_r=T
                np.asarray(tar_len, dtype="object"), np.asarray(y, dtype="object")
     else:
         return np.asarray(x, dtype="object"), np.asarray(sen_len, dtype="object"), np.asarray(y, dtype="object")
+
+def extract_ont(ix, year):
+
+        input_file  = 'data/ARTSData/{}test.json' .format(year)
+        output_keys = 'data/ARTSData/ont{}.json' .format(year)
+
+        with open(input_file, 'r', encoding='utf-8') as fr:
+                test = json.load(fr)
+
+        res = {}
+
+        for i in range(int(len(ix)/3)):
+                res[list(test.keys())[int(ix[i*3]/3)]] = test[list(test.keys())[int(ix[i*3]/3)]]
+
+        keys = list(res.keys())
+
+        with open(output_keys, 'w', encoding='utf-8') as fw:
+                json.dump(keys, fw, sort_keys=False, indent=4)

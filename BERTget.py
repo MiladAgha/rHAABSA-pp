@@ -458,13 +458,10 @@ def getBERT(data):
                 for v in value:
                     f.write('%s ' % v)
 
-# train = 'data/ARTSData/{}train.json' .format(FLAGS.year)
-# test = 'data/ARTSData/ARTS{}test.json' .format(FLAGS.year)
-
-train = 'data/ARTSData/ARTS{}train.json' .format(FLAGS.year)
-test = 'data/ARTSData/ARTS{}test.json' .format(FLAGS.year)
+train = 'data/ARTSData/{}train.json' .format(FLAGS.year)
+test = 'data/ARTSData/{}test.json' .format(FLAGS.year)
 
 data = loadFiles(train, test)
                     
 # data_wot(data)
-getBERT(data)
+# getBERT(data)

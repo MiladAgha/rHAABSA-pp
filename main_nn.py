@@ -30,7 +30,7 @@ def main(_):
     print("[INFO] Training model...")
     model.fit(x=trainX, y=trainY, 
         validation_data=(testX, testY),
-        epochs=200, batch_size=20)
+        epochs=FLAGS.n_iter, batch_size=FLAGS.batch_size)
 
     print("[INFO] Saving model...")
     model.save_weights(FLAGS.save_path + '_weights')

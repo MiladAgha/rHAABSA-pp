@@ -118,16 +118,20 @@ def plot_distribution_aspects_per_sentence_full():
 # plot_rf_sentence_labels()
 # plot_distribution_aspects_per_sentence_full()
 
-# 2014, testsize: , remainingsize: , acc_ont:     
+# 2014, testsize: 1120, remainingsize: 503, acc_ont: 0.7569
 # 2015, testsize: 559, remainingsize: 283, acc_ont: 0.8007
 # 2016, testsize: 623, remainingsize: 239, acc_ont: 0.8620    
 
 def calculate_ARS(year, set):
-    input_file = 'data/ARTSData/ontARTS{}test.json' .format(year)
-    probe_file = 'data/probe/BERT_{}768probe{}.txt_tr' .format(set, year)
+    input_file = 'data/ARTSData/ARTS{}test.json' .format(year)
+    key_file = 'data/ARTSData/ont{}.json' .format(year)
+    result_file = 'data/results/{}{}.txt' .format(year, set)
 
     with open(input_file, 'r', encoding='utf-8') as fr:
         data = json.load(fr)
+
+    with open(key_file, 'r', encoding='utf-8') as fr:
+        ont_keys = json.load(fr)
 
     df = pd.DataFrame(data).transpose()
 
@@ -135,15 +139,14 @@ def calculate_ARS(year, set):
     df['adv'] = df['id'].str.extract(r'_adv([1-3])').fillna(0).astype(int)
     df.drop(['id','from','to','term', 'sentence'], axis=1, inplace=True)
 
-    df[['y','p']] = pd.read_csv(probe_file, sep=" ", header=None).set_index(df.index).iloc[:, :2]
-    df['c'] = (df['y'] != df['p']).astype(int)
+    df['c'] = pd.read_csv(result_file, sep=" ", header=None).set_index(df.index)
 
-    acc = sum(df['y'] == df['p'])/len(df['y'])
+    acc = sum(df['c'])/len(df['c'])
     df_ARS = pd.DataFrame(df[['sid','c']].groupby('sid').sum())
     ARS = len(df_ARS.loc[df_ARS['c'] == 0])/len(df_ARS['c'])
 
     df = df[df['adv'] == 0]
-    acc_0 = sum(df['y'] == df['p'])/len(df['y'])
+    acc_0 = sum(df['c'])/len(df['c'])
 
     res = pd.DataFrame(
         {
@@ -154,5 +157,5 @@ def calculate_ARS(year, set):
         index = ['{}_{}' .format(year,set)])
     return res
 
-res = pd.concat([calculate_ARS(2015, 'tt'),calculate_ARS(2015, 'fl'),calculate_ARS(2016, 'tt'),calculate_ARS(2016, 'fl')]).transpose()
+res = pd.concat([calculate_ARS(2015, 'BERT'),calculate_ARS(2016, 'BERT')]).transpose()
 print(res)
