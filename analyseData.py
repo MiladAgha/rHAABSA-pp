@@ -118,11 +118,42 @@ def plot_distribution_aspects_per_sentence_full():
 # plot_rf_sentence_labels()
 # plot_distribution_aspects_per_sentence_full()
 
-# 2014, testsize: 1120, remainingsize: 503, acc_ont: 0.7569
-# 2015, testsize: 559, remainingsize: 283, acc_ont: 0.8007
-# 2016, testsize: 623, remainingsize: 239, acc_ont: 0.8620    
+# 2014, testsize: 1120, remainingsize: 503, acc_ont: 467/617 = 0.7569 - 0.6964
+# 2015, testsize: 559, remainingsize: 283, acc_ont: 221/276 = 0.8007 - 0.6565
+# 2016, testsize: 623, remainingsize: 239, acc_ont: 331/384 = 0.8620 - 0.7897
 
 def calculate_ARS(year, set):
+    input_file = 'data/ARTSData/ARTS{}test.json' .format(year)
+    result_file = 'data/results/{}{}.txt' .format(year, set)
+
+    with open(input_file, 'r', encoding='utf-8') as fr:
+        data = json.load(fr)
+    df = pd.DataFrame(data).transpose()
+
+    df['sid'] = df['id'].str.replace(r'_adv[1-3]', '', regex=True)
+    df['adv'] = df['id'].str.extract(r'_adv([1-3])').fillna(0).astype(int)
+    df.drop(['id','from','to','term', 'sentence'], axis=1, inplace=True)
+
+    df['c'] = pd.read_csv(result_file, sep=" ", header=None).set_index(df.index)
+    df['nc'] = ~df['c']
+
+    acc = sum(df['c'])/len(df['c'])
+    df_ARS = pd.DataFrame(df[['sid','nc']].groupby('sid').sum())
+    ARS = len(df_ARS.loc[df_ARS['nc'] == 0])/len(df_ARS['nc'])
+
+    df = df[df['adv'] == 0]
+    acc_0 = sum(df['c'])/len(df['c'])
+
+    res = pd.DataFrame(
+        {
+            'acc': [acc],
+            'acc_0': [acc_0],
+            'ARS': [ARS]
+        },
+        index = ['{}_{}' .format(year,set)])
+    return res
+
+def calculate_ARSont(year, set):
     input_file = 'data/ARTSData/ARTS{}test.json' .format(year)
     key_file = 'data/ARTSData/ont{}.json' .format(year)
     result_file = 'data/results/{}{}.txt' .format(year, set)
@@ -140,22 +171,38 @@ def calculate_ARS(year, set):
     df.drop(['id','from','to','term', 'sentence'], axis=1, inplace=True)
 
     df['c'] = pd.read_csv(result_file, sep=" ", header=None).set_index(df.index)
+    df['nc'] = ~df['c']
+
+    df = df[df['sid'].isin(ont_keys)]
 
     acc = sum(df['c'])/len(df['c'])
-    df_ARS = pd.DataFrame(df[['sid','c']].groupby('sid').sum())
-    ARS = len(df_ARS.loc[df_ARS['c'] == 0])/len(df_ARS['c'])
+    df_ARS = pd.DataFrame(df[['sid','nc']].groupby('sid').sum())
+    ARS = len(df_ARS.loc[df_ARS['nc'] == 0])/len(df_ARS['nc'])
 
     df = df[df['adv'] == 0]
     acc_0 = sum(df['c'])/len(df['c'])
+    
+    acc_t = 0
+
+    if year == 2014:
+        acc_t = (sum(df['c']) + 467) / 1120
+    if year == 2015:
+        acc_t = (sum(df['c']) + 221) / 559
+    if year == 2016:
+        acc_t = (sum(df['c']) + 331) / 623
+
 
     res = pd.DataFrame(
         {
             'acc': [acc],
             'acc_0': [acc_0],
-            'ARS': [ARS]
+            'ARS': [ARS],
+            'acc_t': [acc_t]
         },
         index = ['{}_{}' .format(year,set)])
     return res
 
-res = pd.concat([calculate_ARS(2015, 'BERT'),calculate_ARS(2016, 'BERT')]).transpose()
+res = pd.concat([calculate_ARS(2014, 'BERT'),calculate_ARS(2014, 'BERT_adv'),calculate_ARS(2015, 'BERT'),calculate_ARS(2015, 'BERT_adv'),calculate_ARS(2016, 'BERT'),calculate_ARS(2016, 'BERT_adv')]).transpose()
+print(res)
+res = pd.concat([calculate_ARSont(2014, 'BERT'),calculate_ARSont(2014, 'BERT_adv'),calculate_ARSont(2015, 'BERT'),calculate_ARSont(2015, 'BERT_adv'),calculate_ARSont(2016, 'BERT'),calculate_ARSont(2016, 'BERT_adv')]).transpose()
 print(res)

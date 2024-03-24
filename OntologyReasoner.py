@@ -168,8 +168,8 @@ class OntReasoner():
                     negated = True
         negations = ["not", "n,t", "never"]
         if negated == False and any(x in s for x in negations for s in words_in_sentence):
-            print('negation parser')
-            print(' '.join(words_in_sentence))
+            # print('negation parser')
+            # print(' '.join(words_in_sentence))
             result = dependency_parser.raw_parse(' '.join(words_in_sentence))
             dep = result.__next__()
             result = list(dep.triples())
