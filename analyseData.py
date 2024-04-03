@@ -173,6 +173,10 @@ def calculate_ARSont(year, set):
     df['c'] = pd.read_csv(result_file, sep=" ", header=None).set_index(df.index)
     df['nc'] = ~df['c']
 
+    df_n = df[~df['sid'].isin(ont_keys)]
+    df_n = df_n[df_n['adv'] == 0]
+    acc_n = sum(df_n['c'])/len(df_n['c'])
+
     df = df[df['sid'].isin(ont_keys)]
 
     acc = sum(df['c'])/len(df['c'])
@@ -196,6 +200,7 @@ def calculate_ARSont(year, set):
         {
             'acc': [acc],
             'acc_0': [acc_0],
+            'acc_n': [acc_n],
             'ARS': [ARS],
             'acc_t': [acc_t]
         },
